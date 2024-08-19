@@ -50,10 +50,7 @@ public class CSGOMod
     // Add the custom block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.COMBAT){
-            event.accept(ModItems.BUTTERFLY_KNIFE);
-            event.accept(ModItems.FIVE_POUND_NOTE);
-        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

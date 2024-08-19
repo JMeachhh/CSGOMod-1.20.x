@@ -17,6 +17,9 @@ public class ModItems {
     public static final RegistryObject<Item> FIVE_POUND_NOTE = ITEMS.register("five_pound_note",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> POUND_COIN = ITEMS.register("pound_coin",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

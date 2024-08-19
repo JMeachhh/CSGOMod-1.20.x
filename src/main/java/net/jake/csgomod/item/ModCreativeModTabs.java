@@ -19,6 +19,7 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BUTTERFLY_KNIFE.get());
                         output.accept(ModItems.FIVE_POUND_NOTE.get());
+                        output.accept(ModItems.POUND_COIN.get());
                     })
                     .build());
     public static void  register(IEventBus eventBus){
