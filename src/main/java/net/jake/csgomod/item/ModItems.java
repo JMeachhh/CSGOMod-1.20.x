@@ -14,6 +14,9 @@ public class ModItems {
     public static final RegistryObject<Item> BUTTERFLY_KNIFE = ITEMS.register("butterfly_knife",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> FIVE_POUND_NOTE = ITEMS.register("five_pound_note",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -18,6 +18,7 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.csgo_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BUTTERFLY_KNIFE.get());
+                        output.accept(ModItems.FIVE_POUND_NOTE.get());
                     })
                     .build());
     public static void  register(IEventBus eventBus){

@@ -52,6 +52,7 @@ public class CSGOMod
     {
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(ModItems.BUTTERFLY_KNIFE);
+            event.accept(ModItems.FIVE_POUND_NOTE);
         }
     }
 
