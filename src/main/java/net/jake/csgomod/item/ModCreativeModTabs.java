@@ -1,6 +1,7 @@
 package net.jake.csgomod.item;
 
 import net.jake.csgomod.CSGOMod;
+import net.jake.csgomod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,6 +21,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.BUTTERFLY_KNIFE.get());
                         output.accept(ModItems.FIVE_POUND_NOTE.get());
                         output.accept(ModItems.POUND_COIN.get());
+                        output.accept(ModBlocks.BOMB.get());
                     })
                     .build());
     public static void  register(IEventBus eventBus){

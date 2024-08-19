@@ -1,6 +1,7 @@
 package net.jake.csgomod;
 
 import com.mojang.logging.LogUtils;
+import net.jake.csgomod.block.ModBlocks;
 import net.jake.csgomod.item.ModCreativeModTabs;
 import net.jake.csgomod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,6 +32,8 @@ public class CSGOMod
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
