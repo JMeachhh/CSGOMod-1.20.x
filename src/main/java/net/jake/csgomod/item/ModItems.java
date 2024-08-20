@@ -20,6 +20,8 @@ public class ModItems {
     public static final RegistryObject<Item> POUND_COIN = ITEMS.register("pound_coin",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> DEFUSE_KIT = ITEMS.register("defuse_kit",
+            () -> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
