@@ -22,7 +22,7 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> BOMB = registerBlock("bomb",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHAIN).sound(SoundType.BASALT).offsetType(BlockBehaviour.OffsetType.NONE)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHAIN).sound(SoundType.BASALT)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
