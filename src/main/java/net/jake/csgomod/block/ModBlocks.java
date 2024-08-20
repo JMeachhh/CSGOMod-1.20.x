@@ -36,5 +36,4 @@ public class ModBlocks {
         BLOCKS.register(eventBus);
     }
 
-
 }

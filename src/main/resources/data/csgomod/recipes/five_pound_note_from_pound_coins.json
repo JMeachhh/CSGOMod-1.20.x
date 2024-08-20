@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "   ",
+    "###",
+    "#P#"
+  ],
+  "key": {
+    "#": {
+      "item": "csgomod:pound_coin"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "csgomod:five_pound_note"
+  }
+}
