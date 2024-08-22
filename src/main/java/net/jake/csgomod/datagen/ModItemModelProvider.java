@@ -17,10 +17,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.BUTTERFLY_KNIFE);
-        simpleItem(ModItems.DEFUSE_KIT);
-        simpleItem(ModItems.FIVE_POUND_NOTE);
-        simpleItem(ModItems.POUND_COIN);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

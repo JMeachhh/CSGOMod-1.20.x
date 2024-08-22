@@ -16,24 +16,26 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
+public class BombBlock extends BaseEntityBlock {
 
-public class BaseCrateBlock extends BaseEntityBlock {
-
-    public static final VoxelShape SHAPE = Block.box(0,0,4,16,9,13);
-    public BaseCrateBlock(Properties pProperties) {
+    public static final VoxelShape SHAPE = Block.box(4,0,2,10,3,12);
+    public BombBlock(Properties pProperties) {
         super(pProperties);
     }
 
-
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+        pTooltip.add(Component.literal("Goes BOOM!"));
+        super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
+    }
+    @Override
+    public RenderShape getRenderShape(BlockState pState) {
+        return RenderShape.MODEL;
+    }
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         return SHAPE;
-    }
-
-    @Override
-    public RenderShape getRenderShape(BlockState pState) {
-        return RenderShape.MODEL;
     }
 
     @Nullable

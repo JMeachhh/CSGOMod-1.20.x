@@ -1,9 +1,11 @@
 package net.jake.csgomod.datagen;
 
 import net.jake.csgomod.CSGOMod;
+import net.jake.csgomod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -14,7 +16,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        simpleBlock(ModBlocks.BOMB.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/bomb")));
 
+        simpleBlock(ModBlocks.BASE_CASE.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/base_case")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -23,6 +23,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.POUND_COIN.get());
                         output.accept(ModBlocks.BOMB.get());
                         output.accept(ModItems.DEFUSE_KIT.get());
+                        output.accept(ModBlocks.BASE_CASE.get());
                     })
                     .build());
     public static void  register(IEventBus eventBus){

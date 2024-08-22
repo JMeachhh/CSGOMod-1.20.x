@@ -1,0 +1,4 @@
+// 1.20.1	2024-08-22T17:30:02.1207637	Tags for minecraft:block mod id csgomod
+cfb3370ae62d6db2d89cf6315e2a110a55e8dfd5 data/csgomod/tags/blocks/crates.json
+05b8e07244f660403d225144b9816e4fa1ecc55b data/minecraft/tags/blocks/mineable/pickaxe.json
+05b8e07244f660403d225144b9816e4fa1ecc55b data/minecraft/tags/blocks/needs_stone_tool.json

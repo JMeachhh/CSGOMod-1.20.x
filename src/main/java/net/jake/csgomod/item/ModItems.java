@@ -23,6 +23,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> DEFUSE_KIT = ITEMS.register("defuse_kit",
             () -> new DefuseKitItem(new Item.Properties()));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
