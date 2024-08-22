@@ -1,6 +1,7 @@
 package net.jake.csgomod.block;
 
 import net.jake.csgomod.CSGOMod;
+import net.jake.csgomod.block.custom.BaseCrateBlock;
 import net.jake.csgomod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -23,6 +24,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BOMB = registerBlock("bomb",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHAIN).sound(SoundType.BASALT)));
+
+    public static final RegistryObject<Block> BASE_CASE = registerBlock("base_case",
+            () -> new BaseCrateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
