@@ -1,6 +1,7 @@
 package net.jake.csgomod.item;
 
 import net.jake.csgomod.CSGOMod;
+import net.jake.csgomod.item.custom.DefuseKitItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,7 +22,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> DEFUSE_KIT = ITEMS.register("defuse_kit",
-            () -> new Item(new Item.Properties()));
+            () -> new DefuseKitItem(new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
