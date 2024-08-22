@@ -9,12 +9,16 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.UseOnContext;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class DefuseKitItem extends Item {
 
@@ -59,9 +63,17 @@ public class DefuseKitItem extends Item {
      */
     @Override
     public ItemStack finishUsingItem(ItemStack pStack, Level pLevel, LivingEntity pLivingEntity) {
-        pLivingEntity.sendSystemMessage(Component.literal(player.getScoreboardName() + " defused the bomb."));
-        pLevel.destroyBlock(positionClicked, false);
+        if (!pLevel.isClientSide) {
+            pLivingEntity.sendSystemMessage(Component.literal(player.getScoreboardName() + " defused the bomb."));
+            pLevel.destroyBlock(positionClicked, false);
+        }
         return pStack;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        pTooltipComponents.add(Component.translatable("tooltip.csgomod.defuse_kit.tooltip"));
+        super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 
     /**
