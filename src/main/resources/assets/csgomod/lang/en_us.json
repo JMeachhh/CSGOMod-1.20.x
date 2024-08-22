@@ -5,6 +5,8 @@
   "item.csgomod.defuse_kit": "Defuse Kit",
 
   "block.csgomod.bomb": "Bomb",
+  "block.csgomod.base_case": "Base Case",
+  "tooltip.csgomod.defuse_kit.tooltip": "Defuse the bomb!",
 
   "creativetab.csgo_tab": "CSGO Tab"
 }
