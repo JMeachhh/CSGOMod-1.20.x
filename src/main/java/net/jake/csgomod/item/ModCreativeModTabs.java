@@ -15,14 +15,16 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CSGOMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> CSGO_TAB = CREATIVE_MODE_TABS.register("csgo_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BUTTERFLY_KNIFE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BASE_CASE.get()))
                     .title(Component.translatable("creativetab.csgo_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BUTTERFLY_KNIFE.get());
                         output.accept(ModItems.FIVE_POUND_NOTE.get());
                         output.accept(ModItems.POUND_COIN.get());
-                        output.accept(ModBlocks.BOMB.get());
                         output.accept(ModItems.DEFUSE_KIT.get());
+                        output.accept(ModItems.BASE_CASE_KEY.get());
+
+                        output.accept(ModBlocks.BOMB.get());
                         output.accept(ModBlocks.BASE_CASE.get());
                     })
                     .build());

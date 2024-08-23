@@ -3,6 +3,8 @@ package net.jake.csgomod.item.custom;
 import net.jake.csgomod.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
@@ -66,6 +68,7 @@ public class DefuseKitItem extends Item {
         if (!pLevel.isClientSide) {
             pLivingEntity.sendSystemMessage(Component.literal(player.getScoreboardName() + " defused the bomb."));
             pLevel.destroyBlock(positionClicked, false);
+            pLevel.playSound(null, positionClicked, SoundEvents.AMETHYST_BLOCK_PLACE, SoundSource.BLOCKS,1.0f,1.0f);
         }
         return pStack;
     }

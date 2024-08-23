@@ -20,6 +20,8 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> CURRENCY = tag("currency");
+
+        public static final TagKey<Item> BASE_CASE_DROPS = tag("base_case_drops");
         private static TagKey<Item> tag(String name){
             return ItemTags.create(new ResourceLocation(CSGOMod.MOD_ID, name));
         }

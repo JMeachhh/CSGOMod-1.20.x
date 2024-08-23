@@ -2,8 +2,12 @@ package net.jake.csgomod;
 
 import com.mojang.logging.LogUtils;
 import net.jake.csgomod.block.ModBlocks;
+import net.jake.csgomod.block.entity.ModBlockEntities;
 import net.jake.csgomod.item.ModCreativeModTabs;
 import net.jake.csgomod.item.ModItems;
+import net.jake.csgomod.screen.BaseCaseScreen;
+import net.jake.csgomod.screen.ModMenuTypes;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -35,6 +39,9 @@ public class CSGOMod
 
         ModBlocks.register(modEventBus);
         // Register the commonSetup method for modloading
+
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
 
         // Register ourselves for server and other game events we are interested in
@@ -70,7 +77,7 @@ public class CSGOMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            MenuScreens.register(ModMenuTypes.BASE_CASE_MENU.get(), BaseCaseScreen::new);
         }
     }
 }

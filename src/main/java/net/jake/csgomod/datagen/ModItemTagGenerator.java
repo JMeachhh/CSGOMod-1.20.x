@@ -25,5 +25,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.CURRENCY)
                 .add(ModItems.POUND_COIN.get()).addTag(ModTags.Items.CURRENCY);
 
+        this.tag(ModTags.Items.BASE_CASE_DROPS)
+                .add(ModItems.BUTTERFLY_KNIFE.get()).addTag(ModTags.Items.BASE_CASE_DROPS);
+//                .add();
+
     }
 }
