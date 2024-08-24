@@ -31,6 +31,7 @@ import java.util.List;
 
 public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
 
+    private boolean isLocked;
     private final ItemStackHandler itemHandler = new ItemStackHandler(7);
     private static final int OUTPUT_SLOT = 0;
 
@@ -43,13 +44,14 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
 
     public BaseCaseBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.BASE_CASE_BE.get(), pPos, pBlockState);
+        this.isLocked = true;
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {
                 return switch (pIndex) {
-                     case 0 -> BaseCaseBlockEntity.this.openTime;
-                     case 1 -> BaseCaseBlockEntity.this.maxOpenTime;
-                     default -> 0;
+                    case 0 -> BaseCaseBlockEntity.this.openTime;
+                    case 1 -> BaseCaseBlockEntity.this.maxOpenTime;
+                    default -> 0;
                 };
             }
 
@@ -67,6 +69,15 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
                 return 2;
             }
         };
+    }
+
+    public boolean isLocked(){
+        return isLocked;
+    }
+
+    public void setLocked(boolean locked){
+        this.isLocked = locked;
+        setChanged();
     }
 
     @Override
@@ -115,10 +126,13 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
         pTag.put("inventory", itemHandler.serializeNBT());
         pTag.putInt("base_case.openTime", openTime);
         super.saveAdditional(pTag);
+        pTag.putBoolean("Locked", this.isLocked);
     }
 
     @Override
     public void load(CompoundTag pTag) {
+        super.load(pTag);
+        this.isLocked = serializeNBT().getBoolean("Locked");
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
         openTime = pTag.getInt("base_case.openTime");
     }
@@ -158,5 +172,6 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
         }
         return false;
     }
+
 
 }

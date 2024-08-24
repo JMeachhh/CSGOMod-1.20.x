@@ -17,6 +17,11 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(BaseCaseBlockEntity::new,
                     ModBlocks.BASE_CASE.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<BombBlockEntity>> BOMB_BE =
+            BLOCK_ENTITIES.register("bomb_be", () ->
+                    BlockEntityType.Builder.of(BombBlockEntity::new,
+                            ModBlocks.BOMB.get()).build(null));
+
     public static void register(IEventBus eventBus){
         BLOCK_ENTITIES.register(eventBus);
     }

@@ -46,6 +46,14 @@ public class DefuseKitItem extends Item {
     }
 
     @Override
+    public void releaseUsing(ItemStack pStack, Level pLevel, LivingEntity pLivingEntity, int pTimeCharged) {
+        super.releaseUsing(pStack, pLevel, pLivingEntity, pTimeCharged);
+        if (!pLevel.isClientSide){
+            player.sendSystemMessage(Component.literal("Defuse Failed!"));
+        }
+    }
+
+    @Override
     public InteractionResult useOn(UseOnContext pContext) {
         Level pLevel = pContext.getLevel();
         positionClicked = pContext.getClickedPos();

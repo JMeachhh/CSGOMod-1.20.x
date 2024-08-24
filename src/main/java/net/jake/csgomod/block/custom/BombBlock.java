@@ -1,5 +1,7 @@
 package net.jake.csgomod.block.custom;
 
+import net.jake.csgomod.block.entity.BombBlockEntity;
+import net.jake.csgomod.block.entity.ModBlockEntities;
 import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -18,6 +20,8 @@ import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -25,7 +29,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class BombBlock extends Block {
+public class BombBlock extends BaseEntityBlock {
 
     public static final VoxelShape SHAPE = Block.box(4,0,2,11,3,12);
     public BombBlock(Properties pProperties) {
@@ -55,8 +59,19 @@ public class BombBlock extends Block {
         }
     }
 
+    @Nullable
     @Override
-    public void tick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
-        super.tick(pState, pLevel, pPos, pRandom);
+    public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+        return new BombBlockEntity(pPos, pState);
+    }
+
+    @Nullable
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
+        return pLevel.isClientSide ? null : (pLevel1, pPos, pState1, pBlockEntity) -> {
+            if (pBlockEntity instanceof BombBlockEntity bombBlockEntity) {
+                bombBlockEntity.tick();
+            }
+        };
     }
 }

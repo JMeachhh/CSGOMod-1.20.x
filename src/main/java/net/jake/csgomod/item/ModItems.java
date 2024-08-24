@@ -23,7 +23,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> DEFUSE_KIT = ITEMS.register("defuse_kit",
-            () -> new DefuseKitItem(new Item.Properties()));
+            () -> new DefuseKitItem(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> BASE_CASE_KEY = ITEMS.register("base_case_key",
             () -> new BaseCaseKeyItem(new Item.Properties()));

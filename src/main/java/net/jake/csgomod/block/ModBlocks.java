@@ -23,7 +23,7 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> BOMB = registerBlock("bomb",
-            () -> new BombBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN).sound(SoundType.BASALT)));
+            () -> new BombBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN).sound(SoundType.BASALT).noOcclusion()));
 
     public static final RegistryObject<Block> BASE_CASE = registerBlock("base_case",
             () -> new BaseCaseBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
