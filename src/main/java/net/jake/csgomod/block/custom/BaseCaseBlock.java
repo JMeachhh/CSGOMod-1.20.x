@@ -91,7 +91,7 @@ public class BaseCaseBlock extends BaseEntityBlock {
         return InteractionResult.sidedSuccess(pLevel.isClientSide());
     }
 
-    private boolean usingCorrectKey(Player player, InteractionHand hand) {
+    public boolean usingCorrectKey(Player player, InteractionHand hand) {
         return player.getItemInHand(hand).getItem().getClass() == BaseCaseKeyItem.class;
     }
 

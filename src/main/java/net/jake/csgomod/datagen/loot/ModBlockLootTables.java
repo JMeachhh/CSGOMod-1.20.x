@@ -6,6 +6,7 @@ import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -19,6 +20,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlocks.BOMB.get());
         this.dropSelf(ModBlocks.BASE_CASE.get());
+        this.dropSelf(ModBlocks.ARMS_DEAL_CASE.get());
     }
 
     @Override

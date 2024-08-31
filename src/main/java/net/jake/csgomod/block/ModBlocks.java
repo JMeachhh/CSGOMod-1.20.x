@@ -1,6 +1,7 @@
 package net.jake.csgomod.block;
 
 import net.jake.csgomod.CSGOMod;
+import net.jake.csgomod.block.custom.ArmsDealCaseBlock;
 import net.jake.csgomod.block.custom.BaseCaseBlock;
 import net.jake.csgomod.block.custom.BombBlock;
 import net.jake.csgomod.item.ModItems;
@@ -27,6 +28,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BASE_CASE = registerBlock("base_case",
             () -> new BaseCaseBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    public static final RegistryObject<Block> ARMS_DEAL_CASE = registerBlock("arms_deal_case",
+            () -> new ArmsDealCaseBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

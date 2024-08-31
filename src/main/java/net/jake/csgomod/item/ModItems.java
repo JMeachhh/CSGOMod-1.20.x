@@ -1,6 +1,7 @@
 package net.jake.csgomod.item;
 
 import net.jake.csgomod.CSGOMod;
+import net.jake.csgomod.item.custom.ArmsDealCaseKeyItem;
 import net.jake.csgomod.item.custom.BaseCaseKeyItem;
 import net.jake.csgomod.item.custom.DefuseKitItem;
 import net.minecraft.world.item.Item;
@@ -27,6 +28,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> BASE_CASE_KEY = ITEMS.register("base_case_key",
             () -> new BaseCaseKeyItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> ARMS_DEAL_CASE_KEY = ITEMS.register("arms_deal_case_key",
+            () -> new ArmsDealCaseKeyItem(new Item.Properties()));
 
 
 

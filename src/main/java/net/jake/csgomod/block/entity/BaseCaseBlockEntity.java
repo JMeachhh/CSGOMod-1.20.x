@@ -143,14 +143,14 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
             }
         }
 
-    private ItemStack caseDrop() {
+    public ItemStack caseDrop() {
         RandomSource random = RandomSource.create();
         Item randomItem = dropList().get(random.nextInt(dropList().size()));
         ItemStack result = new ItemStack(randomItem);
         return result;
     }
 
-    private List<Item> dropList() {
+    public List<Item> dropList() {
         List<Item> drops = new ArrayList<>();
         drops.add(ModItems.BUTTERFLY_KNIFE.get());
         drops.add(ModItems.DEFUSE_KIT.get());
