@@ -69,7 +69,6 @@ public class BaseCaseBlock extends BaseEntityBlock {
                     if ((usingCorrectKey(pPlayer, pHand))) {
                         pPlayer.setItemInHand(pHand, ItemStack.EMPTY);
                         baseCaseBlockEntity.setLocked(false);
-                        pPlayer.sendSystemMessage(Component.literal("First"));
                         NetworkHooks.openScreen(((ServerPlayer) pPlayer), (BaseCaseBlockEntity) entity, pPos);
                     }
                     else {
@@ -77,14 +76,12 @@ public class BaseCaseBlock extends BaseEntityBlock {
                     }
                 }
                 else {
-                    pPlayer.sendSystemMessage(Component.literal("Second"));
                     NetworkHooks.openScreen(((ServerPlayer) pPlayer), (BaseCaseBlockEntity) entity, pPos);
                 }
 
             } else {
                 throw new IllegalStateException("Our Container provider is missing!");
             }
-            //Calls function to check if item in hand is the key
 
 
         }
