@@ -24,6 +24,30 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         simpleBlock(ModBlocks.ARMS_DEAL_CASE.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/arms_deal_case")));
+
+        simpleBlock(ModBlocks.CHROMA_TWO_CASE.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/chroma_two_case")));
+
+        simpleBlock(ModBlocks.CLUTCH_CASE.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/clutch_case")));
+
+        simpleBlock(ModBlocks.DANGER_ZONE_CASE.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/danger_zone_case")));
+
+        simpleBlock(ModBlocks.DREAMS_AND_NIGHTMARES_CASE.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/dreams_and_nightmares_case")));
+
+        simpleBlock(ModBlocks.GAMMA_TWO_CASE.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/gamma_two_case")));
+
+        simpleBlock(ModBlocks.OPERATION_BRAVO.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/operation_bravo_case")));
+
+        simpleBlock(ModBlocks.PRISMA_CASE.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/prisma_case")));
+
+        simpleBlock(ModBlocks.SPECTRUM_TWO_CASE.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/spectrum_two_case")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

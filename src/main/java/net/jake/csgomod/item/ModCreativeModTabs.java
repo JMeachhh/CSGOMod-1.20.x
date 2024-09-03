@@ -23,11 +23,26 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.POUND_COIN.get());
                         output.accept(ModItems.DEFUSE_KIT.get());
                         output.accept(ModItems.BASE_CASE_KEY.get());
-                        output.accept(ModItems.ARMS_DEAL_CASE_KEY.get());
+                        output.accept(ModItems.CSGO_CASE_KEY.get());
+                        output.accept(ModItems.CHROMA_TWO_CASE_KEY.get());
+                        output.accept(ModItems.CLUTCH_CASE_KEY.get());
+                        output.accept(ModItems.DANGER_ZONE_CASE_KEY.get());
+                        output.accept(ModItems.DREAMS_AND_NIGHTMARES_CASE_KEY.get());
+                        output.accept(ModItems.GAMMA_TWO_CASE_KEY.get());
+                        output.accept(ModItems.PRISMA_CASE_KEY.get());
+                        output.accept(ModItems.SPECTRUM_TWO_CASE_KEY.get());
 
                         output.accept(ModBlocks.BOMB.get());
                         output.accept(ModBlocks.BASE_CASE.get());
                         output.accept(ModBlocks.ARMS_DEAL_CASE.get());
+                        output.accept(ModBlocks.CHROMA_TWO_CASE.get());
+                        output.accept(ModBlocks.CLUTCH_CASE.get());
+                        output.accept(ModBlocks.DANGER_ZONE_CASE.get());
+                        output.accept(ModBlocks.DREAMS_AND_NIGHTMARES_CASE.get());
+                        output.accept(ModBlocks.GAMMA_TWO_CASE.get());
+                        output.accept(ModBlocks.OPERATION_BRAVO.get());
+                        output.accept(ModBlocks.PRISMA_CASE.get());
+                        output.accept(ModBlocks.SPECTRUM_TWO_CASE.get());
                     })
                     .build());
     public static void  register(IEventBus eventBus){

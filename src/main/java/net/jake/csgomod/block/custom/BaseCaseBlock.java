@@ -9,6 +9,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -29,11 +30,13 @@ import java.util.concurrent.locks.Lock;
 
 
 public class BaseCaseBlock extends BaseEntityBlock {
+    protected String caseKeyID;
 
     public static final VoxelShape SHAPE = Block.box(0,0,4,16,9,13);
 
-    public BaseCaseBlock(Properties pProperties) {
+    public BaseCaseBlock(Properties pProperties, String keyID) {
         super(pProperties);
+        caseKeyID = keyID;
     }
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
@@ -66,17 +69,17 @@ public class BaseCaseBlock extends BaseEntityBlock {
             if (entity instanceof BaseCaseBlockEntity) {
                 BaseCaseBlockEntity baseCaseBlockEntity = (BaseCaseBlockEntity) entity;
                 if (baseCaseBlockEntity.isLocked()){
-                    if ((usingCorrectKey(pPlayer, pHand))) {
+                    if ((pPlayer.getItemInHand(pHand).getItem().getDescriptionId().equals(caseKeyID))) {
                         pPlayer.setItemInHand(pHand, ItemStack.EMPTY);
                         baseCaseBlockEntity.setLocked(false);
-                        NetworkHooks.openScreen(((ServerPlayer) pPlayer), (BaseCaseBlockEntity) entity, pPos);
+                        NetworkHooks.openScreen(((ServerPlayer) pPlayer),baseCaseBlockEntity, pPos);
                     }
                     else {
                         throw new IllegalStateException("Key Missing!");
                     }
                 }
                 else {
-                    NetworkHooks.openScreen(((ServerPlayer) pPlayer), (BaseCaseBlockEntity) entity, pPos);
+                    NetworkHooks.openScreen(((ServerPlayer) pPlayer), baseCaseBlockEntity, pPos);
                 }
 
             } else {
@@ -86,10 +89,6 @@ public class BaseCaseBlock extends BaseEntityBlock {
 
         }
         return InteractionResult.sidedSuccess(pLevel.isClientSide());
-    }
-
-    public boolean usingCorrectKey(Player player, InteractionHand hand) {
-        return player.getItemInHand(hand).getItem().getClass() == BaseCaseKeyItem.class;
     }
 
     @Nullable

@@ -21,6 +21,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.BOMB.get());
         this.dropSelf(ModBlocks.BASE_CASE.get());
         this.dropSelf(ModBlocks.ARMS_DEAL_CASE.get());
+        this.dropSelf(ModBlocks.CHROMA_TWO_CASE.get());
+        this.dropSelf(ModBlocks.CLUTCH_CASE.get());
+        this.dropSelf(ModBlocks.DANGER_ZONE_CASE.get());
+        this.dropSelf(ModBlocks.DREAMS_AND_NIGHTMARES_CASE.get());
+        this.dropSelf(ModBlocks.GAMMA_TWO_CASE.get());
+        this.dropSelf(ModBlocks.OPERATION_BRAVO.get());
+        this.dropSelf(ModBlocks.PRISMA_CASE.get());
+        this.dropSelf(ModBlocks.SPECTRUM_TWO_CASE.get());
     }
 
     @Override

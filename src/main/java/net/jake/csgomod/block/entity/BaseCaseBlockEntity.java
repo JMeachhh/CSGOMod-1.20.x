@@ -36,6 +36,7 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
     private static final int OUTPUT_SLOT = 0;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
+    private List<Item> dropList = new ArrayList<>();
 
     protected final ContainerData data;
     private int openTime = 0;
@@ -45,6 +46,7 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
     public BaseCaseBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.BASE_CASE_BE.get(), pPos, pBlockState);
         this.isLocked = true;
+        this.setDropList(createBaseCaseDropList());
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {
@@ -93,7 +95,7 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
     public void onLoad() {
         super.onLoad();
         ItemStack result = caseDrop();
-        this.itemHandler.setStackInSlot(OUTPUT_SLOT,new ItemStack(result.getItem()));
+        this.itemHandler.setStackInSlot(OUTPUT_SLOT, result);
         lazyItemHandler = LazyOptional.of(() -> itemHandler);
     }
 
@@ -115,6 +117,12 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
         return Component.translatable("block.csgomod.base_case");
     }
 
+    private static List<Item> createBaseCaseDropList() {
+        List<Item> drops = new ArrayList<>();
+        drops.add(ModItems.BASE_CASE_KEY.get());
+        return drops;
+    }
+
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int pContainerId, Inventory pPlayerInventory, Player pPlayer) {
@@ -132,7 +140,7 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
     @Override
     public void load(CompoundTag pTag) {
         super.load(pTag);
-        this.isLocked = serializeNBT().getBoolean("Locked");
+        this.isLocked = pTag.getBoolean("Locked");
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
         openTime = pTag.getInt("base_case.openTime");
     }
@@ -143,18 +151,17 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
             }
         }
 
-    public ItemStack caseDrop() {
-        RandomSource random = RandomSource.create();
-        Item randomItem = dropList().get(random.nextInt(dropList().size()));
-        ItemStack result = new ItemStack(randomItem);
-        return result;
+    public void setDropList(List<Item> dropList) {
+        this.dropList = dropList;
     }
+    public ItemStack caseDrop() {
 
-    public List<Item> dropList() {
-        List<Item> drops = new ArrayList<>();
-        drops.add(ModItems.BUTTERFLY_KNIFE.get());
-        drops.add(ModItems.DEFUSE_KIT.get());
-        return drops;
+        if (dropList == null || dropList.isEmpty()){
+            return ItemStack.EMPTY;
+        }
+        RandomSource random = RandomSource.create();
+        Item randomItem = dropList.get(random.nextInt(dropList.size()));
+        return new ItemStack(randomItem);
     }
 
 
@@ -166,11 +173,8 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
 //    }
 
 
-    private boolean dropTaken() {
-        if(this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty()){
-            return true;
-        }
-        return false;
+    public boolean dropTaken() {
+        return this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty();
     }
 
 

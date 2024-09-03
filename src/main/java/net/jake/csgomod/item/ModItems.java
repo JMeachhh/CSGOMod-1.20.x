@@ -1,7 +1,7 @@
 package net.jake.csgomod.item;
 
 import net.jake.csgomod.CSGOMod;
-import net.jake.csgomod.item.custom.ArmsDealCaseKeyItem;
+import net.jake.csgomod.item.custom.CSGOCaseKeyItem;
 import net.jake.csgomod.item.custom.BaseCaseKeyItem;
 import net.jake.csgomod.item.custom.DefuseKitItem;
 import net.minecraft.world.item.Item;
@@ -27,11 +27,31 @@ public class ModItems {
             () -> new DefuseKitItem(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> BASE_CASE_KEY = ITEMS.register("base_case_key",
-            () -> new BaseCaseKeyItem(new Item.Properties()));
+            () -> new CSGOCaseKeyItem(new Item.Properties()));
 
-    public static final RegistryObject<Item> ARMS_DEAL_CASE_KEY = ITEMS.register("arms_deal_case_key",
-            () -> new ArmsDealCaseKeyItem(new Item.Properties()));
+    public static final RegistryObject<Item> CSGO_CASE_KEY = ITEMS.register("csgo_case_key",
+            () -> new CSGOCaseKeyItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> CHROMA_TWO_CASE_KEY = ITEMS.register("chroma_two_case_key",
+            () -> new CSGOCaseKeyItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> CLUTCH_CASE_KEY = ITEMS.register("clutch_case_key",
+            () -> new CSGOCaseKeyItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> DANGER_ZONE_CASE_KEY = ITEMS.register("danger_zone_case_key",
+            () -> new CSGOCaseKeyItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> DREAMS_AND_NIGHTMARES_CASE_KEY = ITEMS.register("dreams_and_nightmares_case_key",
+            () -> new CSGOCaseKeyItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> GAMMA_TWO_CASE_KEY = ITEMS.register("gamma_two_case_key",
+            () -> new CSGOCaseKeyItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> PRISMA_CASE_KEY = ITEMS.register("prisma_case_key",
+            () -> new CSGOCaseKeyItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> SPECTRUM_TWO_CASE_KEY = ITEMS.register("spectrum_two_case_key",
+            () -> new CSGOCaseKeyItem(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

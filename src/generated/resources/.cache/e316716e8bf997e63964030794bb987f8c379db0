@@ -1,4 +1,12 @@
-// 1.20.1	2024-08-30T23:16:11.7930369	Block States: csgomod
+// 1.20.1	2024-09-03T01:10:32.3770154	Block States: csgomod
 b9ce3bee3291843d3f6bfa5a9938454a74ccf90c assets/csgomod/blockstates/arms_deal_case.json
 d1a3b8ede6a2288b15a95e1de7a860310f3c1320 assets/csgomod/blockstates/base_case.json
 dbb66f0600b99363d343a237105c80fb8f01f441 assets/csgomod/blockstates/bomb.json
+5ebb0ca74adfc78c765f30e368902caff0005557 assets/csgomod/blockstates/chroma_two_case.json
+bc0312f554fe53820f24714816e5d8fc8382d92e assets/csgomod/blockstates/clutch_case.json
+4576eac0fc1a4bcc9f5e3e900fb2b984bc66ebe6 assets/csgomod/blockstates/danger_zone_case.json
+c6799d4455cbe80c8b2ddc0ab9a0f5c6a5c39003 assets/csgomod/blockstates/dreams_and_nightmares_case.json
+8973a17474d445dfe5937fa7c4da2b01e8d44468 assets/csgomod/blockstates/gamma_two_case.json
+2c40b21d50e53e613c676786e7f58d2fb2a2c57b assets/csgomod/blockstates/operation_bravo_case.json
+e9216e180db53bb2bb30db0e0c6f9e181181d4df assets/csgomod/blockstates/prisma_case.json
+a2a7c01bceaf1c411bbc1747c340ca1917dc7d08 assets/csgomod/blockstates/spectrum_two_case.json

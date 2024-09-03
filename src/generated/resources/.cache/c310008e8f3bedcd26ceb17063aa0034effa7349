@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-22T17:30:02.1207637	Tags for minecraft:block mod id csgomod
-cfb3370ae62d6db2d89cf6315e2a110a55e8dfd5 data/csgomod/tags/blocks/crates.json
-05b8e07244f660403d225144b9816e4fa1ecc55b data/minecraft/tags/blocks/mineable/pickaxe.json
-05b8e07244f660403d225144b9816e4fa1ecc55b data/minecraft/tags/blocks/needs_stone_tool.json
+// 1.20.1	2024-09-03T01:05:09.6829453	Tags for minecraft:block mod id csgomod
+1b7208d83e49babfedde6e0113d4a06c54103815 data/csgomod/tags/blocks/cases.json
+af0618f73c44de14dd0da91f9c10d906a6543058 data/minecraft/tags/blocks/mineable/pickaxe.json
+44dc35b6ddf64277f9007eafded43f82e5283fba data/minecraft/tags/blocks/needs_stone_tool.json

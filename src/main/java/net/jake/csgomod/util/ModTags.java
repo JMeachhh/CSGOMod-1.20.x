@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.Block;
 public class ModTags {
     public static class Blocks {
 
-        public static final TagKey<Block> CRATES = tag("crates");
+        public static final TagKey<Block> CASES = tag("cases");
 
         private static TagKey<Block> tag(String name){
             return BlockTags.create(new ResourceLocation(CSGOMod.MOD_ID, name));
@@ -20,6 +20,8 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> CURRENCY = tag("currency");
+
+        public static final TagKey<Item> KEYS = tag("keys");
 
         public static final TagKey<Item> BASE_CASE_DROPS = tag("base_case_drops");
         private static TagKey<Item> tag(String name){

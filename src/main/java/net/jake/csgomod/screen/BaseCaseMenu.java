@@ -47,8 +47,8 @@ public class BaseCaseMenu extends AbstractContainerMenu {
 
     @Override
     public boolean stillValid(Player pPlayer) {
-        return stillValid(ContainerLevelAccess.create(level,blockEntity.getBlockPos()),
-                pPlayer, ModBlocks.BASE_CASE.get());
+        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
+                pPlayer, blockEntity.getBlockState().getBlock());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

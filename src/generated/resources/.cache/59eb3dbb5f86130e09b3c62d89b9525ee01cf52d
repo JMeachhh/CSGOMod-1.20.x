@@ -1,4 +1,12 @@
-// 1.20.1	2024-08-30T23:16:11.794041	Loot Tables
+// 1.20.1	2024-09-03T01:05:09.684945	Loot Tables
 0db1b0c578b90007220ca407784a4a66e6079ed0 data/csgomod/loot_tables/blocks/arms_deal_case.json
 027af47d9a6bea4d59551b47d462e5dbc09483c3 data/csgomod/loot_tables/blocks/base_case.json
 309ef5fd58ee3a5308155f810ba7c6465d8f6dfb data/csgomod/loot_tables/blocks/bomb.json
+97de9115c052a0ff79117e0a7aaf4330a5db0209 data/csgomod/loot_tables/blocks/chroma_two_case.json
+9d635882bd58dcf5e0b3c0c102f18886ca23abaf data/csgomod/loot_tables/blocks/clutch_case.json
+725db60f53eb7d71b8bc5ee0874ae6c2b83d10ee data/csgomod/loot_tables/blocks/danger_zone_case.json
+e815575864b1afc870665787c1d79812268bb8f1 data/csgomod/loot_tables/blocks/dreams_and_nightmares_case.json
+e75290b48bea73623638c1d27d92b7d096524c62 data/csgomod/loot_tables/blocks/gamma_two_case.json
+3325c9800159f07bdd44ebc638190360aaae8539 data/csgomod/loot_tables/blocks/operation_bravo_case.json
+4528f4c8d88922095ae66af1f99a1a28dea98ebb data/csgomod/loot_tables/blocks/prisma_case.json
+7881c2a5d9644ce27bd2cc75390a8f4664edb1e1 data/csgomod/loot_tables/blocks/spectrum_two_case.json

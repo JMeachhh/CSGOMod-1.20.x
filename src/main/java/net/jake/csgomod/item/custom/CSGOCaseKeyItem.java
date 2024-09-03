@@ -3,9 +3,9 @@ package net.jake.csgomod.item.custom;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-public class ArmsDealCaseKeyItem extends Item {
+public class CSGOCaseKeyItem extends Item {
 
-    public ArmsDealCaseKeyItem(Properties pProperties) {
+    public CSGOCaseKeyItem(Properties pProperties) {
         super(pProperties);
     }
 

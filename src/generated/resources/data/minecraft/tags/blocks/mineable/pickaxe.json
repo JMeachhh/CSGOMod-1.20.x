@@ -1,6 +1,16 @@
 {
   "values": [
     "csgomod:base_case",
+    "csgomod:arms_deal_case",
+    "csgomod:chroma_two_case",
+    "csgomod:clutch_case",
+    "csgomod:danger_zone_case",
+    "csgomod:gamma_two_case",
+    "csgomod:gamma_two_case",
+    "csgomod:prisma_case",
+    "csgomod:spectrum_two_case",
+    "csgomod:dreams_and_nightmares_case",
+    "csgomod:operation_bravo_case",
     "csgomod:bomb"
   ]
 }

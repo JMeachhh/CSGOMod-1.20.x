@@ -1,0 +1,20 @@
+{
+  "values": [
+    "csgomod:base_case_key",
+    "#csgomod:keys",
+    "csgomod:csgo_case_key",
+    "#csgomod:keys",
+    "csgomod:chroma_two_case_key",
+    "#csgomod:keys",
+    "csgomod:danger_zone_case_key",
+    "#csgomod:keys",
+    "csgomod:dreams_and_nightmares_case_key",
+    "#csgomod:keys",
+    "csgomod:gamma_two_case_key",
+    "#csgomod:keys",
+    "csgomod:prisma_case_key",
+    "#csgomod:keys",
+    "csgomod:spectrum_two_case_key",
+    "#csgomod:keys"
+  ]
+}
