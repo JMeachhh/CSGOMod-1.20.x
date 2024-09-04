@@ -6,6 +6,15 @@ A Counter-Strike Mod for Minecraft which brings the thrill of opening cases to m
 - Butterfly Knife
 ### Cases
 - Base Case + Base Case Key
+- Arms Deal Case + Arms Deal Case Key
+- Chroma Two Case + Chroma Two Case Key
+- Clutch Case + Clutch Case Key
+- Danger Zone Case + Danger Zone Case Key
+- Dreams And Nightmares Case + Dreams And Nightmares Case Key
+- Gamma Two Case + Gamma Two Case Key
+- Operation Bravo Case + Operation Bravo Case Key
+- Prisma Case + Prisma Case Key
+- Spectrum Two case + Spectrum Two Case Key
 ### Currency
 - £1 Coin
 - £5 Note
@@ -13,8 +22,6 @@ A Counter-Strike Mod for Minecraft which brings the thrill of opening cases to m
 - Bomb
 - Defuse Kit
 ## Upcoming Features
-### More Cases
-Adding case variants and keys accordingly
 ### More Case Drops
 Adding Guns and More Knives
 ### Villager Trading
