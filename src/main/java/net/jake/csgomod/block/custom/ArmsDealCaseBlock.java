@@ -21,4 +21,15 @@ public class ArmsDealCaseBlock extends BaseCaseBlock {
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
         return new ArmsDealCaseBlockEntity(pPos,pState);
     }
+
+    @Nullable
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
+        if(pLevel.isClientSide()){
+            return null;
+        }
+        System.out.println("Getting ticker for " + pBlockEntityType);
+        return createTickerHelper(pBlockEntityType, ModBlockEntities.ARMS_DEAL_CASE_BE.get(),
+                (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
+    }
 }

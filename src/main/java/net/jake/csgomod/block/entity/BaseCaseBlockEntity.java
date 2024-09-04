@@ -146,6 +146,7 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
+        System.out.println("Ticking at " + pPos);
             if(dropTaken()) {
                 pLevel.destroyBlock(pPos, false);
             }

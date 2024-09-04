@@ -7,6 +7,7 @@ import net.jake.csgomod.item.ModCreativeModTabs;
 import net.jake.csgomod.item.ModItems;
 import net.jake.csgomod.screen.BaseCaseScreen;
 import net.jake.csgomod.screen.ModMenuTypes;
+import net.jake.csgomod.villager.ModVillagers;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -36,9 +37,10 @@ public class CSGOMod
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
-
         ModBlocks.register(modEventBus);
         // Register the commonSetup method for modloading
+
+        ModVillagers.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);

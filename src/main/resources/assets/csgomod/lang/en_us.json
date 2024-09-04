@@ -16,7 +16,7 @@
   "block.csgomod.bomb": "Bomb",
   "block.csgomod.base_case": "Base Case",
   "block.csgomod.arms_deal_case": "Arms Deal Case",
-  "block.csgomod.chroma_two_case": "Chrome Two Case",
+  "block.csgomod.chroma_two_case": "Chroma Two Case",
   "block.csgomod.clutch_case": "Clutch Case",
   "block.csgomod.danger_zone_case": "Danger Zone Case",
   "block.csgomod.dreams_and_nightmares_case": "Dreams And Nightmares Case",
@@ -25,6 +25,21 @@
   "block.csgomod.prisma_case": "Prisma Case",
   "block.csgomod.spectrum_two_case": "Spectrum two Case",
   "tooltip.csgomod.defuse_kit.tooltip": "Defuse the bomb!",
+
+  "entity.minecraft.villager.csgomod.armsdealtrader": "Arms Deal Trader",
+  "entity.minecraft.villager.csgomod.chromatwotrader": "Chroma Two Trader",
+  "entity.minecraft.villager.csgomod.clutchtrader": "Clutch Trader",
+  "entity.minecraft.villager.csgomod.dangerzonetrader": "Danger Zone Trader",
+  "entity.minecraft.villager.csgomod.dreamsandnightmarestrader": "Dreams And Nightmares Trader",
+  "entity.minecraft.villager.csgomod.gammatwotrader": "Gamma Two Trader",
+  "entity.minecraft.villager.csgomod.operationbravotrader": "Operation Bravo Trader",
+  "entity.minecraft.villager.csgomod.prismatrader": "Prisma Trader",
+  "entity.minecraft.villager.csgomod.spectrumtwotrader": "Spectrum Two Trader",
+
+
+
+
+
 
   "creativetab.csgo_tab": "CSGO Tab"
 }

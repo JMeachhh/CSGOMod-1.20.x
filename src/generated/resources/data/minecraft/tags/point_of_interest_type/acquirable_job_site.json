@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "csgomod:arms_deal_poi",
+      "required": false
+    },
+    {
+      "id": "csgomod:chroma_two_poi",
+      "required": false
+    },
+    {
+      "id": "csgomod:clutch_poi",
+      "required": false
+    },
+    {
+      "id": "csgomod:danger_zone_poi",
+      "required": false
+    },
+    {
+      "id": "csgomod:dreams_and_nightmares_poi",
+      "required": false
+    },
+    {
+      "id": "csgomod:gamma_two_poi",
+      "required": false
+    },
+    {
+      "id": "csgomod:operation_bravo_poi",
+      "required": false
+    },
+    {
+      "id": "csgomod:prisma_case_poi",
+      "required": false
+    },
+    {
+      "id": "csgomod:spectrum_two_poi",
+      "required": false
+    }
+  ]
+}

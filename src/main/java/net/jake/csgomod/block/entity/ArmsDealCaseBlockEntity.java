@@ -7,11 +7,13 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.items.ItemStackHandler;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ArmsDealCaseBlockEntity extends BaseCaseBlockEntity implements MenuProvider {
+
     public ArmsDealCaseBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(pPos, pBlockState);
         this.setDropList(createArmsDealCaseDropList());
@@ -23,3 +25,4 @@ public class ArmsDealCaseBlockEntity extends BaseCaseBlockEntity implements Menu
         return drops;
     }
 }
+
