@@ -60,10 +60,10 @@ public class ModEvents {
                     new ItemStack(ModBlocks.OPERATION_BRAVO.get(), 1),
                     3, 8, 0.02f));
 
-            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.FIVE_POUND_NOTE.get(), 2),
-                    new ItemStack(ModBlocks.PRISMA_CASE.get(), 1),
-                    3, 8, 0.02f));
+//            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
+//                    new ItemStack(ModItems.FIVE_POUND_NOTE.get(), 2),
+//                    new ItemStack(ModBlocks.PRISMA_CASE.get(), 1),
+//                    3, 8, 0.02f));
 
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(ModItems.FIVE_POUND_NOTE.get(), 2),
@@ -171,15 +171,10 @@ public class ModEvents {
 
         rareTrades.add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(ModItems.FIVE_POUND_NOTE.get(), 1),
-                new ItemStack(ModBlocks.CLUTCH_CASE.get(), 1),
-                3, 8, 0.02f));
-
-        genericTrades.add((pTrader, pRandom) -> new MerchantOffer(
-                new ItemStack(ModItems.FIVE_POUND_NOTE.get(), 1),
                 new ItemStack(ModBlocks.ARMS_DEAL_CASE.get(), 1),
                 3, 8, 0.02f));
 
-        genericTrades.add((pTrader, pRandom) -> new MerchantOffer(
+        rareTrades.add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(ModItems.FIVE_POUND_NOTE.get(), 1),
                 new ItemStack(ModBlocks.OPERATION_BRAVO.get(), 1),
                 3, 8, 0.02f));
@@ -189,5 +184,4 @@ public class ModEvents {
                 new ItemStack(ModItems.CSGO_CASE_KEY.get(), 1),
                 3, 8, 0.02f));
     }
-
 }

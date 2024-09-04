@@ -29,7 +29,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.DANGER_ZONE_CASE_KEY.get());
                         output.accept(ModItems.DREAMS_AND_NIGHTMARES_CASE_KEY.get());
                         output.accept(ModItems.GAMMA_TWO_CASE_KEY.get());
-                        output.accept(ModItems.PRISMA_CASE_KEY.get());
+                        // output.accept(ModItems.PRISMA_CASE_KEY.get());
                         output.accept(ModItems.SPECTRUM_TWO_CASE_KEY.get());
 
                         output.accept(ModBlocks.BOMB.get());
@@ -41,7 +41,7 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.DREAMS_AND_NIGHTMARES_CASE.get());
                         output.accept(ModBlocks.GAMMA_TWO_CASE.get());
                         output.accept(ModBlocks.OPERATION_BRAVO.get());
-                        output.accept(ModBlocks.PRISMA_CASE.get());
+                        // output.accept(ModBlocks.PRISMA_CASE.get());
                         output.accept(ModBlocks.SPECTRUM_TWO_CASE.get());
                     })
                     .build());
