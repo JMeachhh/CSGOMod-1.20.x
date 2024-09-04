@@ -18,6 +18,14 @@ A Counter-Strike Mod for Minecraft which brings the thrill of opening cases to m
 ### Currency
 - £1 Coin
 - £5 Note
+### Villager Trading
+#### Custom Profession for every case 
+- Sells keys for the case
+#### Custom Weaponsmith Trading
+- Master level sells cases at random
+#### Wandering Trader 
+- Sells CSGO Case Key
+- Sells Limited Cases
 ### Extra Features
 - Bomb
 - Defuse Kit
@@ -25,12 +33,12 @@ A Counter-Strike Mod for Minecraft which brings the thrill of opening cases to m
 ### More Case Drops
 Adding Guns and More Knives
 ### Villager Trading
-Adding a villager to buy cases off  
-Adding a villager for each case to buy the keys and sell your drops
+Selling case drops to gain money   
+Price Balancing
 ### Sounds
 Adding case sounds  
 Adding bomb sounds  
-Adding degusing sounds
+Adding defusing sounds
 ## Whats Needed
 - Minecraft 1.20.1 or 1.20.2
 - Fabric Loader
