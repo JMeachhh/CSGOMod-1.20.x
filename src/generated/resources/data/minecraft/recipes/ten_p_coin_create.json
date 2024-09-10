@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:emerald"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    "I#I",
+    "III"
+  ],
+  "result": {
+    "item": "csgomod:ten_p_coin"
+  },
+  "show_notification": true
+}

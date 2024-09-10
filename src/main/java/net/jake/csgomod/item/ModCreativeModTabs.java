@@ -14,26 +14,10 @@ public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CSGOMod.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> CSGO_TAB = CREATIVE_MODE_TABS.register("csgo_tab",
+    public static final RegistryObject<CreativeModeTab> CASES_TAB = CREATIVE_MODE_TABS.register("cases_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BASE_CASE.get()))
-                    .title(Component.translatable("creativetab.csgo_tab"))
+                    .title(Component.translatable("creativetab.cases_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.BUTTERFLY_KNIFE.get());
-                        output.accept(ModItems.FIVE_POUND_NOTE.get());
-                        output.accept(ModItems.POUND_COIN.get());
-                        output.accept(ModItems.DEFUSE_KIT.get());
-                        output.accept(ModItems.BASE_CASE_KEY.get());
-                        output.accept(ModItems.CSGO_CASE_KEY.get());
-                        output.accept(ModItems.CHROMA_TWO_CASE_KEY.get());
-                        output.accept(ModItems.CLUTCH_CASE_KEY.get());
-                        output.accept(ModItems.DANGER_ZONE_CASE_KEY.get());
-                        output.accept(ModItems.DREAMS_AND_NIGHTMARES_CASE_KEY.get());
-                        output.accept(ModItems.GAMMA_TWO_CASE_KEY.get());
-                        // output.accept(ModItems.PRISMA_CASE_KEY.get());
-                        output.accept(ModItems.SPECTRUM_TWO_CASE_KEY.get());
-
-                        output.accept(ModBlocks.BOMB.get());
-                        output.accept(ModBlocks.BASE_CASE.get());
                         output.accept(ModBlocks.ARMS_DEAL_CASE.get());
                         output.accept(ModBlocks.CHROMA_TWO_CASE.get());
                         output.accept(ModBlocks.CLUTCH_CASE.get());
@@ -41,8 +25,70 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.DREAMS_AND_NIGHTMARES_CASE.get());
                         output.accept(ModBlocks.GAMMA_TWO_CASE.get());
                         output.accept(ModBlocks.OPERATION_BRAVO.get());
-                        // output.accept(ModBlocks.PRISMA_CASE.get());
                         output.accept(ModBlocks.SPECTRUM_TWO_CASE.get());
+
+                        // output.accept(ModBlocks.BASE_CASE.get());
+                        // output.accept(ModBlocks.PRISMA_CASE.get());
+
+                        output.accept(ModItems.CSGO_CASE_KEY.get());
+                        output.accept(ModItems.CHROMA_TWO_CASE_KEY.get());
+                        output.accept(ModItems.CLUTCH_CASE_KEY.get());
+                        output.accept(ModItems.DANGER_ZONE_CASE_KEY.get());
+                        output.accept(ModItems.DREAMS_AND_NIGHTMARES_CASE_KEY.get());
+                        output.accept(ModItems.GAMMA_TWO_CASE_KEY.get());
+                        output.accept(ModItems.SPECTRUM_TWO_CASE_KEY.get());
+
+                        // output.accept(ModItems.BASE_CASE_KEY.get());
+                        //output.accept(ModItems.BUTTERFLY_KNIFE.get());
+                        // output.accept(ModItems.PRISMA_CASE_KEY.get());
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> WEAPONS_TAB = CREATIVE_MODE_TABS.register("weapons_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.GAMMA_DOPPPLER.get()))
+                    .title(Component.translatable("creativetab.weapons_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModItems.TIGER_TOOTH.get());
+                        output.accept(ModItems.DAMASCUS_STEEL.get());
+                        output.accept(ModItems.SLAUGHTER.get());
+                        output.accept(ModItems.FADE.get());
+                        output.accept(ModItems.GAMMA_DOPPPLER.get());
+                        output.accept(ModItems.AUTOTRONIC.get());
+
+                        output.accept(ModItems.THE_EMPRESS.get());
+                        output.accept(ModItems.SEE_YA_LATER.get());
+                        output.accept(ModItems.LEADED_GLASS.get());
+                        output.accept(ModItems.GOO.get());
+                        output.accept(ModItems.MORRIS.get());
+                        output.accept(ModItems.OFF_WORLD.get());
+                        output.accept(ModItems.FIRE_SERPENT.get());
+                        output.accept(ModItems.GOLDEN_KOI.get());
+                        output.accept(ModItems.OCEAN_FOAM.get());
+                        output.accept(ModItems.GRAPHITE.get());
+                        output.accept(ModItems.OVERGROWTH.get());
+                        output.accept(ModItems.BRIGHTWATER.get());
+                        output.accept(ModItems.NEON_REVOLUTION.get());
+                        output.accept(ModItems.ROLL_CAGE.get());
+                        output.accept(ModItems.FUEL_INJECTOR.get());
+                        output.accept(ModItems.AIRLOCK.get());
+                        output.accept(ModItems.DIRECTIVE.get());
+                        output.accept(ModItems.WEASEL.get());
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> CURRENCY_TAB = CREATIVE_MODE_TABS.register("currency_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.POUND_COIN.get()))
+                    .title(Component.translatable("creativetab.currency_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModItems.TEN_P_COIN.get());
+                        output.accept(ModItems.TWENTY_P_COIN.get());
+                        output.accept(ModItems.POUND_COIN.get());
+                        output.accept(ModItems.FIVE_POUND_NOTE.get());
+                        output.accept(ModItems.TWENTY_POUND_NOTE.get());
+                        output.accept(ModItems.FIFTY_POUND_NOTE.get());
+
                     })
                     .build());
     public static void  register(IEventBus eventBus){

@@ -21,9 +21,11 @@ public class ModTags {
     public static class Items {
         public static final TagKey<Item> CURRENCY = tag("currency");
 
+        public static final TagKey<Item> KNIVES = tag("knives");
+
         public static final TagKey<Item> KEYS = tag("keys");
 
-        public static final TagKey<Item> BASE_CASE_DROPS = tag("base_case_drops");
+        public static final TagKey<Item> GUNS = tag("guns");
         private static TagKey<Item> tag(String name){
             return ItemTags.create(new ResourceLocation(CSGOMod.MOD_ID, name));
         }

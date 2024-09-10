@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:pound_coin_create"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_twenty_p_coin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "csgomod:twenty_p_coin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_twenty_p_coin",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:pound_coin_create"
+    ]
+  },
+  "sends_telemetry_event": false
+}

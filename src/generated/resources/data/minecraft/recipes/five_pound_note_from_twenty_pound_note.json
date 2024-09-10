@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "csgomod:twenty_pound_note"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "csgomod:five_pound_note"
+  }
+}

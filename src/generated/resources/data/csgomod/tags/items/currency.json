@@ -3,6 +3,14 @@
     "csgomod:five_pound_note",
     "#csgomod:currency",
     "csgomod:pound_coin",
+    "#csgomod:currency",
+    "csgomod:fifty_pound_note",
+    "#csgomod:currency",
+    "csgomod:twenty_pound_note",
+    "#csgomod:currency",
+    "csgomod:twenty_p_coin",
+    "#csgomod:currency",
+    "csgomod:ten_p_coin",
     "#csgomod:currency"
   ]
 }

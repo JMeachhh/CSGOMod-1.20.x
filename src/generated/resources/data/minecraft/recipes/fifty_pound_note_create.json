@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "csgomod:five_pound_note"
+    },
+    "H": {
+      "item": "minecraft:paper"
+    },
+    "T": {
+      "item": "csgomod:twenty_pound_note"
+    }
+  },
+  "pattern": [
+    " # ",
+    "THT",
+    " # "
+  ],
+  "result": {
+    "item": "csgomod:fifty_pound_note"
+  },
+  "show_notification": true
+}

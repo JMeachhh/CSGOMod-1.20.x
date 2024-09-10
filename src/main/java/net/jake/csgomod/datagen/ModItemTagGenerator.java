@@ -22,7 +22,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(ModTags.Items.CURRENCY)
                 .add(ModItems.FIVE_POUND_NOTE.get()).addTag(ModTags.Items.CURRENCY)
-                .add(ModItems.POUND_COIN.get()).addTag(ModTags.Items.CURRENCY);
+                .add(ModItems.POUND_COIN.get()).addTag(ModTags.Items.CURRENCY)
+                .add(ModItems.FIFTY_POUND_NOTE.get()).addTag(ModTags.Items.CURRENCY)
+                .add(ModItems.TWENTY_POUND_NOTE.get()).addTag(ModTags.Items.CURRENCY)
+                .add(ModItems.TWENTY_P_COIN.get()).addTag(ModTags.Items.CURRENCY)
+                .add(ModItems.TEN_P_COIN.get()).addTag(ModTags.Items.CURRENCY);
 
         this.tag(ModTags.Items.KEYS)
                 .add(ModItems.BASE_CASE_KEY.get()).addTag(ModTags.Items.KEYS)
@@ -36,9 +40,33 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
 
 
-        this.tag(ModTags.Items.BASE_CASE_DROPS)
-                .add(ModItems.BUTTERFLY_KNIFE.get()).addTag(ModTags.Items.BASE_CASE_DROPS);
-//                .add();
+        this.tag(ModTags.Items.KNIVES)
+                .add(ModItems.BUTTERFLY_KNIFE.get()).addTag(ModTags.Items.KNIVES)
+                .add(ModItems.TIGER_TOOTH.get()).addTag(ModTags.Items.KNIVES)
+                .add(ModItems.DAMASCUS_STEEL.get()).addTag(ModTags.Items.KNIVES)
+                .add(ModItems.SLAUGHTER.get()).addTag(ModTags.Items.KNIVES)
+                .add(ModItems.FADE.get()).addTag(ModTags.Items.KNIVES)
+                .add(ModItems.GAMMA_DOPPPLER.get()).addTag(ModTags.Items.KNIVES)
+                .add(ModItems.AUTOTRONIC.get()).addTag(ModTags.Items.KNIVES);
 
+        this.tag(ModTags.Items.GUNS)
+                .add(ModItems.THE_EMPRESS.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.SEE_YA_LATER.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.LEADED_GLASS.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.GOO.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.MORRIS.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.OFF_WORLD.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.FIRE_SERPENT.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.GOLDEN_KOI.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.OCEAN_FOAM.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.GRAPHITE.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.OVERGROWTH.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.BRIGHTWATER.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.NEON_REVOLUTION.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.ROLL_CAGE.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.FUEL_INJECTOR.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.AIRLOCK.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.DIRECTIVE.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.WEASEL.get()).addTag(ModTags.Items.GUNS);
     }
 }

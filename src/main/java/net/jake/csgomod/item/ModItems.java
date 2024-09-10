@@ -1,9 +1,7 @@
 package net.jake.csgomod.item;
 
 import net.jake.csgomod.CSGOMod;
-import net.jake.csgomod.item.custom.CSGOCaseKeyItem;
-import net.jake.csgomod.item.custom.BaseCaseKeyItem;
-import net.jake.csgomod.item.custom.DefuseKitItem;
+import net.jake.csgomod.item.custom.*;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,18 +12,105 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, CSGOMod.MOD_ID);
 
-    public static final RegistryObject<Item> BUTTERFLY_KNIFE = ITEMS.register("butterfly_knife",
-            () -> new Item(new Item.Properties().stacksTo(1)));
 
+    // Currency
     public static final RegistryObject<Item> FIVE_POUND_NOTE = ITEMS.register("five_pound_note",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TWENTY_POUND_NOTE = ITEMS.register("twenty_pound_note",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> FIFTY_POUND_NOTE = ITEMS.register("fifty_pound_note",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> POUND_COIN = ITEMS.register("pound_coin",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> DEFUSE_KIT = ITEMS.register("defuse_kit",
-            () -> new DefuseKitItem(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> TEN_P_COIN = ITEMS.register("ten_p_coin",
+            () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> TWENTY_P_COIN = ITEMS.register("twenty_p_coin",
+            () -> new Item(new Item.Properties()));
+
+    // Guns
+    public static final RegistryObject<Item> THE_EMPRESS = ITEMS.register("the_empress",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> SEE_YA_LATER = ITEMS.register("see_ya_later",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> LEADED_GLASS = ITEMS.register("leaded_glass",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> GOO = ITEMS.register("goo",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> MORRIS = ITEMS.register("morris",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> FIRE_SERPENT = ITEMS.register("fire_serpent",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> OFF_WORLD = ITEMS.register("off_world",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> GOLDEN_KOI = ITEMS.register("golden_koi",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> OCEAN_FOAM = ITEMS.register("ocean_foam",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> GRAPHITE = ITEMS.register("graphite",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> OVERGROWTH = ITEMS.register("overgrowth",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> BRIGHTWATER = ITEMS.register("brightwater",
+            () -> new GunItem(new Item.Properties()));
+
+    // Knives
+
+    public static final RegistryObject<Item> BUTTERFLY_KNIFE = ITEMS.register("butterfly_knife",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> DAMASCUS_STEEL = ITEMS.register("damascus_steel",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> TIGER_TOOTH = ITEMS.register("tiger_tooth",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> SLAUGHTER = ITEMS.register("slaughter",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> FADE = ITEMS.register("fade",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> GAMMA_DOPPPLER = ITEMS.register("gamma_doppler",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> AUTOTRONIC = ITEMS.register("autotronic",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> NEON_REVOLUTION = ITEMS.register("neon_revolution",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> ROLL_CAGE = ITEMS.register("roll_cage",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> FUEL_INJECTOR = ITEMS.register("fuel_injector",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> AIRLOCK = ITEMS.register("airlock",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> DIRECTIVE = ITEMS.register("directive",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> WEASEL = ITEMS.register("weasel",
+            () -> new KnifeItem(new Item.Properties()));
+
+    // Keys
     public static final RegistryObject<Item> BASE_CASE_KEY = ITEMS.register("base_case_key",
             () -> new CSGOCaseKeyItem(new Item.Properties()));
 
@@ -52,6 +137,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> SPECTRUM_TWO_CASE_KEY = ITEMS.register("spectrum_two_case_key",
             () -> new CSGOCaseKeyItem(new Item.Properties()));
+
+    // Other
+    public static final RegistryObject<Item> DEFUSE_KIT = ITEMS.register("defuse_kit",
+            () -> new DefuseKitItem(new Item.Properties().stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {

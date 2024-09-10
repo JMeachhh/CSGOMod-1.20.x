@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "T": {
+      "item": "csgomod:twenty_p_coin"
+    }
+  },
+  "pattern": [
+    "   ",
+    "TTT",
+    "TCT"
+  ],
+  "result": {
+    "item": "csgomod:pound_coin"
+  },
+  "show_notification": true
+}

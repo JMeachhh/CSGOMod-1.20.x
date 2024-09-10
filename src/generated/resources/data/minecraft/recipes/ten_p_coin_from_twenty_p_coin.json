@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "csgomod:twenty_p_coin"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "csgomod:ten_p_coin"
+  }
+}

@@ -1,8 +1,40 @@
 {
   "item.csgomod.butterfly_knife": "Butterfly Knife",
+  "item.csgomod.tiger_tooth": "Butterfly Knife | Tiger Tooth",
+  "item.csgomod.damascus_steel": "Butterfly Knife | Damascus Steel",
+  "item.csgomod.slaughter": "Bayonet | Slaughter",
+  "item.csgomod.fade": "Bayonet | Fade",
+  "item.csgomod.gamma_doppler": "Bayonet | Gamma Doppler",
+  "item.csgomod.autotronic": "M9 Bayonet | Autotronic",
+  "item.csgomod.neon_revolution": "AK47 | Neon Revolution",
+  "item.csgomod.roll_cage": "FAMAS | Roll Cage",
+  "item.csgomod.fuel_injector": "Tec-9 | Fuel Injector",
+  "item.csgomod.airlock": "MP9 | Airlock",
+  "item.csgomod.directive": "Desert Eagle | Directive",
+  "item.csgomod.weasel": "Glock-18 | Weasel",
+
+  "item.csgomod.the_empress": "AK47 | The Empress",
+  "item.csgomod.see_ya_later": "P250 | See Ya Later",
+  "item.csgomod.leaded_glass": "M4A1-S | Leaded Glass",
+  "item.csgomod.goo": "MP9 | Goo",
+  "item.csgomod.morris": "Sawed-Off | Morris",
+  "item.csgomod.off_world": "Glock-18 | Off World",
+  "item.csgomod.fire_serpent": "AK47 | Fire Serpent",
+  "item.csgomod.golden_koi": "Desert Eagle | Golden Koi",
+  "item.csgomod.ocean_foam": "P2000 | Ocean Foam",
+  "item.csgomod.graphite": "AWP | Graphite",
+  "item.csgomod.overgrowth": "USPS-S | Overgrowth",
+  "item.csgomod.brightwater": "M4A1-S | Brightwater",
+
   "item.csgomod.five_pound_note": "£5 Note",
   "item.csgomod.pound_coin": "£1 Coin",
+  "item.csgomod.ten_p_coin": "10p Coin",
+  "item.csgomod.twenty_p_coin": "20p Coin",
+  "item.csgomod.twenty_pound_note": "£20 Note",
+  "item.csgomod.fifty_pound_note": "£50 Note",
+
   "item.csgomod.defuse_kit": "Defuse Kit",
+
   "item.csgomod.base_case_key": "Base Case Key",
   "item.csgomod.csgo_case_key": "CSGO Case Key",
   "item.csgomod.chroma_two_case_key": "Chroma Two Key",
@@ -41,5 +73,7 @@
 
 
 
-  "creativetab.csgo_tab": "CSGO Tab"
+  "creativetab.cases_tab": "Cases",
+  "creativetab.weapons_tab": "Weapons",
+  "creativetab.currency_tab": "Currency"
 }

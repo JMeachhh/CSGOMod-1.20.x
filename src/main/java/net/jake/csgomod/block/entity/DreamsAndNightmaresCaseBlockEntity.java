@@ -17,7 +17,32 @@ public class DreamsAndNightmaresCaseBlockEntity extends BaseCaseBlockEntity {
 
     private static List<Item> createDreamsAndNightmaresCaseDropList() {
         List<Item> drops = new ArrayList<>();
-        drops.add(ModItems.DREAMS_AND_NIGHTMARES_CASE_KEY.get());
+
+//        // Special Item - 2/1000
+//        drops.add(ModItems..get());
+//        drops.add(ModItems..get());
+//
+//        // Covert Item - 6/1000
+//        drops.add(ModItems..get());
+//        drops.add(ModItems..get());
+//        drops.add(ModItems..get());
+//        drops.add(ModItems..get());
+//        drops.add(ModItems..get());
+//        drops.add(ModItems..get());
+//
+//        // Classified + Restricted 192/1000
+//        // Per Item 96/1000
+//        for (int i = 0; i < 96; i++){
+//            drops.add(ModItems..get());
+//            drops.add(ModItems..get());
+//        }
+//
+//        // Mil-Spec Grade 800 / 1000
+//        // Per Item 400 / 1000
+//        for (int i = 0; i < 400; i++){
+//            drops.add(ModItems..get());
+//            drops.add(ModItems..get());
+//        }
         return drops;
     }
 }

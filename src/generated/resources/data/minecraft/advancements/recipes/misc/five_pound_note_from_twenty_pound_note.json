@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:five_pound_note_from_twenty_pound_note"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_twenty_pound_note": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "csgomod:twenty_pound_note"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_twenty_pound_note",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:five_pound_note_from_twenty_pound_note"
+    ]
+  },
+  "sends_telemetry_event": false
+}
