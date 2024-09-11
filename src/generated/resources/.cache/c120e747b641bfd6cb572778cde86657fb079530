@@ -1,5 +1,5 @@
-// 1.20.1	2024-09-10T16:49:24.0525393	Tags for minecraft:item mod id csgomod
+// 1.20.1	2024-09-11T14:56:00.3454792	Tags for minecraft:item mod id csgomod
 d1ed15546e4c9623b3fa1d5849fcf3266f60c92f data/csgomod/tags/items/currency.json
-afbbf7b31b132434cfe6f04f39d62b41cbbba733 data/csgomod/tags/items/guns.json
+e337c601976e9549e923508a71bbbafd5fd89eb7 data/csgomod/tags/items/guns.json
 0b8dc804b0383ef79e2028d3a4572d67471885b5 data/csgomod/tags/items/keys.json
-2c8dc7ef91b5762ea65a074d57b7fb71713f667d data/csgomod/tags/items/knives.json
+a2da86e180816cb259aa954159f3031e489401e1 data/csgomod/tags/items/knives.json

@@ -69,6 +69,59 @@ public class ModItems {
     public static final RegistryObject<Item> BRIGHTWATER = ITEMS.register("brightwater",
             () -> new GunItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> NEON_REVOLUTION = ITEMS.register("neon_revolution",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> ROLL_CAGE = ITEMS.register("roll_cage",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> FUEL_INJECTOR = ITEMS.register("fuel_injector",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> AIRLOCK = ITEMS.register("airlock",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> DIRECTIVE = ITEMS.register("directive",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> WEASEL = ITEMS.register("weasel",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> STARLIGHT_PROTECTOR = ITEMS.register("starlight_protector",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> NIGHTWISH = ITEMS.register("nightwish",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> NIGHT_TERROR = ITEMS.register("night_terror",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> RAPID_EYE_MOVEMENT = ITEMS.register("rapid_eye_movement",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> LIFTED_SPIRITS = ITEMS.register("lifted_spirits",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> SPIRIT_BOARD = ITEMS.register("spirit_board",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> ASIIMOV = ITEMS.register("asiimov",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> NEO_NOIR = ITEMS.register("neo_noir",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> FLASHBACK = ITEMS.register("flashback",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> OXIDE_BLAZE = ITEMS.register("oxide_blaze",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> MECHA_INDUSTRIES = ITEMS.register("mecha_industries",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> BLACK_SAND = ITEMS.register("black_sand",
+            () -> new GunItem(new Item.Properties()));
     // Knives
 
     public static final RegistryObject<Item> BUTTERFLY_KNIFE = ITEMS.register("butterfly_knife",
@@ -92,23 +145,18 @@ public class ModItems {
     public static final RegistryObject<Item> AUTOTRONIC = ITEMS.register("autotronic",
             () -> new KnifeItem(new Item.Properties()));
 
-    public static final RegistryObject<Item> NEON_REVOLUTION = ITEMS.register("neon_revolution",
+    public static final RegistryObject<Item> BLACK_LAMINATE = ITEMS.register("black_laminate",
             () -> new KnifeItem(new Item.Properties()));
 
-    public static final RegistryObject<Item> ROLL_CAGE = ITEMS.register("roll_cage",
+    public static final RegistryObject<Item> LORE = ITEMS.register("lore",
             () -> new KnifeItem(new Item.Properties()));
 
-    public static final RegistryObject<Item> FUEL_INJECTOR = ITEMS.register("fuel_injector",
+    public static final RegistryObject<Item> SCORCHED = ITEMS.register("scorched",
             () -> new KnifeItem(new Item.Properties()));
 
-    public static final RegistryObject<Item> AIRLOCK = ITEMS.register("airlock",
+    public static final RegistryObject<Item> CRISMON_WEB = ITEMS.register("crimson_web",
             () -> new KnifeItem(new Item.Properties()));
 
-    public static final RegistryObject<Item> DIRECTIVE = ITEMS.register("directive",
-            () -> new KnifeItem(new Item.Properties()));
-
-    public static final RegistryObject<Item> WEASEL = ITEMS.register("weasel",
-            () -> new KnifeItem(new Item.Properties()));
 
     // Keys
     public static final RegistryObject<Item> BASE_CASE_KEY = ITEMS.register("base_case_key",

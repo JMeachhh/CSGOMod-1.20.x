@@ -49,31 +49,70 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.weapons_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
 
-                        output.accept(ModItems.TIGER_TOOTH.get());
-                        output.accept(ModItems.DAMASCUS_STEEL.get());
+                        // Bayonet
                         output.accept(ModItems.SLAUGHTER.get());
                         output.accept(ModItems.FADE.get());
                         output.accept(ModItems.GAMMA_DOPPPLER.get());
                         output.accept(ModItems.AUTOTRONIC.get());
 
-                        output.accept(ModItems.THE_EMPRESS.get());
+                        //Butterfly Knife
+                        output.accept(ModItems.TIGER_TOOTH.get());
+                        output.accept(ModItems.DAMASCUS_STEEL.get());
+                        output.accept(ModItems.BLACK_LAMINATE.get());
+                        output.accept(ModItems.LORE.get());
+
+                        //Stilleto Knife
+                        output.accept(ModItems.CRISMON_WEB.get());
+                        output.accept(ModItems.SCORCHED.get());
+
+                        // Glock
                         output.accept(ModItems.SEE_YA_LATER.get());
-                        output.accept(ModItems.LEADED_GLASS.get());
-                        output.accept(ModItems.GOO.get());
-                        output.accept(ModItems.MORRIS.get());
                         output.accept(ModItems.OFF_WORLD.get());
-                        output.accept(ModItems.FIRE_SERPENT.get());
                         output.accept(ModItems.GOLDEN_KOI.get());
                         output.accept(ModItems.OCEAN_FOAM.get());
-                        output.accept(ModItems.GRAPHITE.get());
-                        output.accept(ModItems.OVERGROWTH.get());
-                        output.accept(ModItems.BRIGHTWATER.get());
-                        output.accept(ModItems.NEON_REVOLUTION.get());
-                        output.accept(ModItems.ROLL_CAGE.get());
-                        output.accept(ModItems.FUEL_INJECTOR.get());
-                        output.accept(ModItems.AIRLOCK.get());
                         output.accept(ModItems.DIRECTIVE.get());
                         output.accept(ModItems.WEASEL.get());
+                        output.accept(ModItems.LIFTED_SPIRITS.get());
+                        output.accept(ModItems.MECHA_INDUSTRIES.get());
+                        output.accept(ModItems.OXIDE_BLAZE.get());
+
+                        // USP-S
+                        output.accept(ModItems.OVERGROWTH.get());
+                        output.accept(ModItems.FLASHBACK.get());
+
+                        // TEC-9
+                        output.accept(ModItems.FUEL_INJECTOR.get());
+
+                        // Sawed Off
+                        output.accept(ModItems.MORRIS.get());
+                        output.accept(ModItems.SPIRIT_BOARD.get());
+                        output.accept(ModItems.BLACK_SAND.get());
+
+                        //MP9
+                        output.accept(ModItems.GOO.get());
+                        output.accept(ModItems.AIRLOCK.get());
+                        output.accept(ModItems.STARLIGHT_PROTECTOR.get());
+
+                        // FAMAS
+                        output.accept(ModItems.ROLL_CAGE.get());
+                        output.accept(ModItems.RAPID_EYE_MOVEMENT.get());
+
+                        // M4A1-S
+                        output.accept(ModItems.LEADED_GLASS.get());
+                        output.accept(ModItems.BRIGHTWATER.get());
+                        output.accept(ModItems.NIGHT_TERROR.get());
+
+                        // AK47
+                        output.accept(ModItems.THE_EMPRESS.get());
+                        output.accept(ModItems.FIRE_SERPENT.get());
+                        output.accept(ModItems.NEON_REVOLUTION.get());
+                        output.accept(ModItems.NIGHTWISH.get());
+                        output.accept(ModItems.ASIIMOV.get());
+
+                        // AWP
+                        output.accept(ModItems.GRAPHITE.get());
+                        output.accept(ModItems.NEO_NOIR.get());
+
                     })
                     .build());
 
@@ -88,6 +127,17 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.FIVE_POUND_NOTE.get());
                         output.accept(ModItems.TWENTY_POUND_NOTE.get());
                         output.accept(ModItems.FIFTY_POUND_NOTE.get());
+
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> CSGO_TAB = CREATIVE_MODE_TABS.register("csgo_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BOMB.get()))
+                    .title(Component.translatable("creativetab.csgo_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModBlocks.BOMB.get());
+                        output.accept(ModItems.DEFUSE_KIT.get());
 
                     })
                     .build());

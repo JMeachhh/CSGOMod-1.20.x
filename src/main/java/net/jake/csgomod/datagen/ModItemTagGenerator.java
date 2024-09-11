@@ -47,7 +47,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.SLAUGHTER.get()).addTag(ModTags.Items.KNIVES)
                 .add(ModItems.FADE.get()).addTag(ModTags.Items.KNIVES)
                 .add(ModItems.GAMMA_DOPPPLER.get()).addTag(ModTags.Items.KNIVES)
-                .add(ModItems.AUTOTRONIC.get()).addTag(ModTags.Items.KNIVES);
+                .add(ModItems.AUTOTRONIC.get()).addTag(ModTags.Items.KNIVES)
+                .add(ModItems.BLACK_LAMINATE.get()).addTag(ModTags.Items.KNIVES)
+                .add(ModItems.LORE.get()).addTag(ModTags.Items.KNIVES)
+                .add(ModItems.CRISMON_WEB.get()).addTag(ModTags.Items.KNIVES)
+                .add(ModItems.SCORCHED.get()).addTag(ModTags.Items.KNIVES);
 
         this.tag(ModTags.Items.GUNS)
                 .add(ModItems.THE_EMPRESS.get()).addTag(ModTags.Items.GUNS)
@@ -67,6 +71,20 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.FUEL_INJECTOR.get()).addTag(ModTags.Items.GUNS)
                 .add(ModItems.AIRLOCK.get()).addTag(ModTags.Items.GUNS)
                 .add(ModItems.DIRECTIVE.get()).addTag(ModTags.Items.GUNS)
-                .add(ModItems.WEASEL.get()).addTag(ModTags.Items.GUNS);
+                .add(ModItems.WEASEL.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.NIGHTWISH.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.STARLIGHT_PROTECTOR.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.NIGHT_TERROR.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.RAPID_EYE_MOVEMENT.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.SPIRIT_BOARD.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.LIFTED_SPIRITS.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.NEO_NOIR.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.ASIIMOV.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.MECHA_INDUSTRIES.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.FLASHBACK.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.OXIDE_BLAZE.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.BLACK_SAND.get()).addTag(ModTags.Items.GUNS);
+
+
     }
 }

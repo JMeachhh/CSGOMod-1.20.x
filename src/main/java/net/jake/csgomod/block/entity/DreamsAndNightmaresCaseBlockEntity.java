@@ -18,31 +18,31 @@ public class DreamsAndNightmaresCaseBlockEntity extends BaseCaseBlockEntity {
     private static List<Item> createDreamsAndNightmaresCaseDropList() {
         List<Item> drops = new ArrayList<>();
 
-//        // Special Item - 2/1000
-//        drops.add(ModItems..get());
-//        drops.add(ModItems..get());
-//
-//        // Covert Item - 6/1000
-//        drops.add(ModItems..get());
-//        drops.add(ModItems..get());
-//        drops.add(ModItems..get());
-//        drops.add(ModItems..get());
-//        drops.add(ModItems..get());
-//        drops.add(ModItems..get());
-//
-//        // Classified + Restricted 192/1000
-//        // Per Item 96/1000
-//        for (int i = 0; i < 96; i++){
-//            drops.add(ModItems..get());
-//            drops.add(ModItems..get());
-//        }
-//
-//        // Mil-Spec Grade 800 / 1000
-//        // Per Item 400 / 1000
-//        for (int i = 0; i < 400; i++){
-//            drops.add(ModItems..get());
-//            drops.add(ModItems..get());
-//        }
+        // Special Item - 2/1000
+        drops.add(ModItems.BLACK_LAMINATE.get());
+        drops.add(ModItems.LORE.get());
+
+        // Covert Item - 6/1000
+        drops.add(ModItems.NIGHTWISH.get());
+        drops.add(ModItems.NIGHTWISH.get());
+        drops.add(ModItems.NIGHTWISH.get());
+        drops.add(ModItems.STARLIGHT_PROTECTOR.get());
+        drops.add(ModItems.STARLIGHT_PROTECTOR.get());
+        drops.add(ModItems.STARLIGHT_PROTECTOR.get());
+
+        // Classified + Restricted 192/1000
+        // Per Item 96/1000
+        for (int i = 0; i < 96; i++){
+            drops.add(ModItems.RAPID_EYE_MOVEMENT.get());
+            drops.add(ModItems.NIGHT_TERROR.get());
+        }
+
+        // Mil-Spec Grade 800 / 1000
+        // Per Item 400 / 1000
+        for (int i = 0; i < 400; i++){
+            drops.add(ModItems.LIFTED_SPIRITS.get());
+            drops.add(ModItems.SPIRIT_BOARD.get());
+        }
         return drops;
     }
 }

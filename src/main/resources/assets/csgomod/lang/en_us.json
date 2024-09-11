@@ -6,12 +6,11 @@
   "item.csgomod.fade": "Bayonet | Fade",
   "item.csgomod.gamma_doppler": "Bayonet | Gamma Doppler",
   "item.csgomod.autotronic": "M9 Bayonet | Autotronic",
-  "item.csgomod.neon_revolution": "AK47 | Neon Revolution",
-  "item.csgomod.roll_cage": "FAMAS | Roll Cage",
-  "item.csgomod.fuel_injector": "Tec-9 | Fuel Injector",
-  "item.csgomod.airlock": "MP9 | Airlock",
-  "item.csgomod.directive": "Desert Eagle | Directive",
-  "item.csgomod.weasel": "Glock-18 | Weasel",
+  "item.csgomod.black_laminate": "Butterfly Knife | Black Laminate",
+  "item.csgomod.lore": "Butterfly Knife | Lore",
+  "item.csgomod.scorched": "Stilleto Knife | Scorched",
+  "item.csgomod.crimson_web": "Stilleto Knife | Crimson Web",
+
 
   "item.csgomod.the_empress": "AK47 | The Empress",
   "item.csgomod.see_ya_later": "P250 | See Ya Later",
@@ -25,6 +24,26 @@
   "item.csgomod.graphite": "AWP | Graphite",
   "item.csgomod.overgrowth": "USPS-S | Overgrowth",
   "item.csgomod.brightwater": "M4A1-S | Brightwater",
+  "item.csgomod.neon_revolution": "AK47 | Neon Revolution",
+  "item.csgomod.roll_cage": "FAMAS | Roll Cage",
+  "item.csgomod.fuel_injector": "Tec-9 | Fuel Injector",
+  "item.csgomod.airlock": "MP9 | Airlock",
+  "item.csgomod.directive": "Desert Eagle | Directive",
+  "item.csgomod.weasel": "Glock-18 | Weasel",
+  "item.csgomod.nightwish": "AK47 | Nightwish",
+  "item.csgomod.starlight_protector": "MP9 | Starlight Protector",
+  "item.csgomod.night_terror": "M4A1-S | Night Terror",
+  "item.csgomod.rapid_eye_movement": "FAMAS | Rapid Eye Movement",
+  "item.csgomod.lifted_spirits": "P2000 | Lifted Spirits",
+  "item.csgomod.spirit_board": "Sawed-Off | Spirit Board",
+  "item.csgomod.neo_noir": "AWP | Neo Noir",
+  "item.csgomod.asiimov": "AK47 | Asiimov",
+  "item.csgomod.flashback": "USP-S | Flashback",
+  "item.csgomod.oxide_blaze": "Glock-18 | Oxide Blaze",
+  "item.csgomod.black_sand": "Sawed-Off | Black Sand",
+  "item.csgomod.mecha_industries": "Desert Eagle | Mecha Industries",
+
+
 
   "item.csgomod.five_pound_note": "£5 Note",
   "item.csgomod.pound_coin": "£1 Coin",
@@ -75,5 +94,6 @@
 
   "creativetab.cases_tab": "Cases",
   "creativetab.weapons_tab": "Weapons",
-  "creativetab.currency_tab": "Currency"
+  "creativetab.currency_tab": "Currency",
+  "creativetab.csgo_tab": "CSGO"
 }
