@@ -20,7 +20,7 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.ARMS_DEAL_CASE.get());
                         output.accept(ModBlocks.CHROMA_TWO_CASE.get());
-                        output.accept(ModBlocks.CLUTCH_CASE.get());
+//                        output.accept(ModBlocks.CLUTCH_CASE.get());
                         output.accept(ModBlocks.DANGER_ZONE_CASE.get());
                         output.accept(ModBlocks.DREAMS_AND_NIGHTMARES_CASE.get());
                         output.accept(ModBlocks.GAMMA_TWO_CASE.get());
@@ -32,7 +32,7 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.CSGO_CASE_KEY.get());
                         output.accept(ModItems.CHROMA_TWO_CASE_KEY.get());
-                        output.accept(ModItems.CLUTCH_CASE_KEY.get());
+//                        output.accept(ModItems.CLUTCH_CASE_KEY.get());
                         output.accept(ModItems.DANGER_ZONE_CASE_KEY.get());
                         output.accept(ModItems.DREAMS_AND_NIGHTMARES_CASE_KEY.get());
                         output.accept(ModItems.GAMMA_TWO_CASE_KEY.get());
@@ -54,6 +54,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.FADE.get());
                         output.accept(ModItems.GAMMA_DOPPPLER.get());
                         output.accept(ModItems.AUTOTRONIC.get());
+                        output.accept(ModItems.MARBLE_FADE.get());
+                        output.accept(ModItems.ULTRAVIOLET.get());
 
                         //Butterfly Knife
                         output.accept(ModItems.TIGER_TOOTH.get());
@@ -75,6 +77,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.LIFTED_SPIRITS.get());
                         output.accept(ModItems.MECHA_INDUSTRIES.get());
                         output.accept(ModItems.OXIDE_BLAZE.get());
+                        output.accept(ModItems.MONKEY_BUSINESS.get());
+                        output.accept(ModItems.VALENCE.get());
 
                         // USP-S
                         output.accept(ModItems.OVERGROWTH.get());
@@ -83,10 +87,14 @@ public class ModCreativeModTabs {
                         // TEC-9
                         output.accept(ModItems.FUEL_INJECTOR.get());
 
+                        // Mac-10
+                        output.accept(ModItems.NEON_RIDER.get());
+
                         // Sawed Off
                         output.accept(ModItems.MORRIS.get());
                         output.accept(ModItems.SPIRIT_BOARD.get());
                         output.accept(ModItems.BLACK_SAND.get());
+                        output.accept(ModItems.ORIGAMI.get());
 
                         //MP9
                         output.accept(ModItems.GOO.get());
@@ -101,6 +109,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.LEADED_GLASS.get());
                         output.accept(ModItems.BRIGHTWATER.get());
                         output.accept(ModItems.NIGHT_TERROR.get());
+                        output.accept(ModItems.HYPER_BEAST.get());
 
                         // AK47
                         output.accept(ModItems.THE_EMPRESS.get());
@@ -112,6 +121,7 @@ public class ModCreativeModTabs {
                         // AWP
                         output.accept(ModItems.GRAPHITE.get());
                         output.accept(ModItems.NEO_NOIR.get());
+                        output.accept(ModItems.WORM_GOD.get());
 
                     })
                     .build());

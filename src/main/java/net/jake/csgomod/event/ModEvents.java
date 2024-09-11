@@ -26,20 +26,20 @@ public class ModEvents {
         if(event.getType() == VillagerProfession.WEAPONSMITH) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
-            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.TWENTY_POUND_NOTE.get(), 4),
-                    new ItemStack(ModBlocks.ARMS_DEAL_CASE.get(), 1),
-                    3, 8, 0.02f));
+//            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
+//                    new ItemStack(ModItems.TWENTY_POUND_NOTE.get(), 4),
+//                    new ItemStack(ModBlocks.ARMS_DEAL_CASE.get(), 1),
+//                    3, 8, 0.02f));
 
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 2),
+                    new ItemStack(ModItems.POUND_COIN.get(), 3),
                     new ItemStack(ModBlocks.CHROMA_TWO_CASE.get(), 1),
                     3, 8, 0.02f));
 
-            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 1),
-                    new ItemStack(ModBlocks.CLUTCH_CASE.get(), 1),
-                    3, 8, 0.02f));
+//            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
+//                    new ItemStack(ModItems.POUND_COIN.get(), 1),
+//                    new ItemStack(ModBlocks.CLUTCH_CASE.get(), 1),
+//                    3, 8, 0.02f));
 
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(ModItems.POUND_COIN.get(), 1),
@@ -75,15 +75,15 @@ public class ModEvents {
 
         // Custom Villagers
 
-        if(event.getType() == ModVillagers.ARMS_DEAL_TRADER.get()) {
-            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
-
-            // level 1
-            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 2),
-                    new ItemStack(ModItems.CSGO_CASE_KEY.get(), 1), 2, 8, 0.02f));
-
-        }
+//        if(event.getType() == ModVillagers.ARMS_DEAL_TRADER.get()) {
+//            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+//
+//            // level 1
+//            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+//                    new ItemStack(ModItems.POUND_COIN.get(), 2),
+//                    new ItemStack(ModItems.CSGO_CASE_KEY.get(), 1), 2, 8, 0.02f));
+//
+//        }
 
         if(event.getType() == ModVillagers.CHROMA_TWO_TRADER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
@@ -93,17 +93,55 @@ public class ModEvents {
                     new ItemStack(ModItems.POUND_COIN.get(), 2),
                     new ItemStack(ModItems.CHROMA_TWO_CASE_KEY.get(), 1), 2, 8, 0.02f));
 
-        }
-
-        if(event.getType() == ModVillagers.CLUTCH_TRADER.get()) {
-            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
-
-            // level 1
-            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+            // level 2
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(ModItems.POUND_COIN.get(), 2),
-                    new ItemStack(ModItems.CLUTCH_CASE_KEY.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.VALENCE.get(), 1), 2, 8, 0.02f));
+
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.TEN_P_COIN.get(), 1),
+                    new ItemStack(ModItems.ORIGAMI.get(), 1), 2, 8, 0.02f));
+
+
+            // level 3
+            trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.POUND_COIN.get(), 4),
+                    new ItemStack(ModItems.MONKEY_BUSINESS.get(), 1), 2, 8, 0.02f));
+
+            trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.TWENTY_P_COIN.get(), 8),
+                    new ItemStack(ModItems.WORM_GOD.get(), 1), 2, 8, 0.02f));
+
+
+            // level 4
+            trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 1),
+                    new ItemStack(ModItems.HYPER_BEAST.get(), 1), 2, 8, 0.02f));
+
+            trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.POUND_COIN.get(), 7),
+                    new ItemStack(ModItems.NEON_RIDER.get(), 1), 2, 8, 0.02f));
+
+            // level 5
+            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 11),
+                    new ItemStack(ModItems.MARBLE_FADE.get(), 1), 2, 8, 0.02f));
+
+            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 7),
+                    new ItemStack(ModItems.ULTRAVIOLET.get(), 1), 2, 8, 0.02f));
 
         }
+
+//        if(event.getType() == ModVillagers.CLUTCH_TRADER.get()) {
+//            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+//
+//            // level 1
+//            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+//                    new ItemStack(ModItems.POUND_COIN.get(), 2),
+//                    new ItemStack(ModItems.CLUTCH_CASE_KEY.get(), 1), 2, 8, 0.02f));
+//
+//        }
 
         if(event.getType() == ModVillagers.DANGER_ZONE_TRADER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();

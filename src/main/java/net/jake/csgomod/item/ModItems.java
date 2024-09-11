@@ -122,6 +122,25 @@ public class ModItems {
 
     public static final RegistryObject<Item> BLACK_SAND = ITEMS.register("black_sand",
             () -> new GunItem(new Item.Properties()));
+
+
+    public static final RegistryObject<Item> HYPER_BEAST = ITEMS.register("hyper_beast",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> NEON_RIDER = ITEMS.register("neon_rider",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> WORM_GOD = ITEMS.register("worm_god",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> MONKEY_BUSINESS = ITEMS.register("monkey_business",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> ORIGAMI = ITEMS.register("origami",
+            () -> new GunItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> VALENCE = ITEMS.register("valence",
+            () -> new GunItem(new Item.Properties()));
     // Knives
 
     public static final RegistryObject<Item> BUTTERFLY_KNIFE = ITEMS.register("butterfly_knife",
@@ -155,6 +174,12 @@ public class ModItems {
             () -> new KnifeItem(new Item.Properties()));
 
     public static final RegistryObject<Item> CRISMON_WEB = ITEMS.register("crimson_web",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> MARBLE_FADE = ITEMS.register("marble_fade",
+            () -> new KnifeItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> ULTRAVIOLET = ITEMS.register("ultraviolet",
             () -> new KnifeItem(new Item.Properties()));
 
 

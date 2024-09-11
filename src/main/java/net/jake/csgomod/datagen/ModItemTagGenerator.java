@@ -51,7 +51,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.BLACK_LAMINATE.get()).addTag(ModTags.Items.KNIVES)
                 .add(ModItems.LORE.get()).addTag(ModTags.Items.KNIVES)
                 .add(ModItems.CRISMON_WEB.get()).addTag(ModTags.Items.KNIVES)
-                .add(ModItems.SCORCHED.get()).addTag(ModTags.Items.KNIVES);
+                .add(ModItems.SCORCHED.get()).addTag(ModTags.Items.KNIVES)
+                .add(ModItems.MARBLE_FADE.get()).addTag(ModTags.Items.KNIVES)
+                .add(ModItems.ULTRAVIOLET.get()).addTag(ModTags.Items.KNIVES);
 
         this.tag(ModTags.Items.GUNS)
                 .add(ModItems.THE_EMPRESS.get()).addTag(ModTags.Items.GUNS)
@@ -83,7 +85,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.MECHA_INDUSTRIES.get()).addTag(ModTags.Items.GUNS)
                 .add(ModItems.FLASHBACK.get()).addTag(ModTags.Items.GUNS)
                 .add(ModItems.OXIDE_BLAZE.get()).addTag(ModTags.Items.GUNS)
-                .add(ModItems.BLACK_SAND.get()).addTag(ModTags.Items.GUNS);
+                .add(ModItems.BLACK_SAND.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.HYPER_BEAST.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.NEON_RIDER.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.WORM_GOD.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.MONKEY_BUSINESS.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.ORIGAMI.get()).addTag(ModTags.Items.GUNS)
+                .add(ModItems.VALENCE.get()).addTag(ModTags.Items.GUNS);
 
 
     }

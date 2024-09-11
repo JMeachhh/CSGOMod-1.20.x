@@ -73,6 +73,13 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
         };
     }
 
+    public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
+        System.out.println("Ticking at " + pPos);
+        if(dropTaken()) {
+            pLevel.destroyBlock(pPos, false);
+        }
+    }
+
     public boolean isLocked(){
         return isLocked;
     }
@@ -144,13 +151,6 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
         openTime = pTag.getInt("base_case.openTime");
     }
-
-    public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
-        System.out.println("Ticking at " + pPos);
-            if(dropTaken()) {
-                pLevel.destroyBlock(pPos, false);
-            }
-        }
 
     public void setDropList(List<Item> dropList) {
         this.dropList = dropList;

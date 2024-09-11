@@ -17,7 +17,7 @@ public class ClutchCaseBlockEntity extends BaseCaseBlockEntity {
 
     private static List<Item> createClutchCaseDropList() {
         List<Item> drops = new ArrayList<>();
-        drops.add(ModItems.CLUTCH_CASE_KEY.get());
+
         return drops;
     }
 

@@ -10,7 +10,8 @@
   "item.csgomod.lore": "Butterfly Knife | Lore",
   "item.csgomod.scorched": "Stilleto Knife | Scorched",
   "item.csgomod.crimson_web": "Stilleto Knife | Crimson Web",
-
+  "item.csgomod.marble_fade": "Bayonet | Marble Fade",
+  "item.csgomod.ultraviolet": "Bayonet | Ultraviolet",
 
   "item.csgomod.the_empress": "AK47 | The Empress",
   "item.csgomod.see_ya_later": "P250 | See Ya Later",
@@ -42,6 +43,12 @@
   "item.csgomod.oxide_blaze": "Glock-18 | Oxide Blaze",
   "item.csgomod.black_sand": "Sawed-Off | Black Sand",
   "item.csgomod.mecha_industries": "Desert Eagle | Mecha Industries",
+  "item.csgomod.hyper_beast": "M4A1-S | Hyper Beast",
+  "item.csgomod.neon_rider": "MAC-10 | Neon Rider",
+  "item.csgomod.worm_god": "AWP | Worm God",
+  "item.csgomod.monkey_business": "Five-SeveN | Monkey Business",
+  "item.csgomod.origami": "Sawed-Off | Origami",
+  "item.csgomod.valence": "P250 | Valence",
 
 
 
@@ -86,11 +93,6 @@
   "entity.minecraft.villager.csgomod.operationbravotrader": "Operation Bravo Trader",
   "entity.minecraft.villager.csgomod.prismatrader": "Prisma Trader",
   "entity.minecraft.villager.csgomod.spectrumtwotrader": "Spectrum Two Trader",
-
-
-
-
-
 
   "creativetab.cases_tab": "Cases",
   "creativetab.weapons_tab": "Weapons",

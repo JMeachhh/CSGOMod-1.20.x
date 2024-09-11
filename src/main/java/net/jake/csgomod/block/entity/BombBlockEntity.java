@@ -40,7 +40,7 @@ public class BombBlockEntity extends BlockEntity{
     }
 
    private void bombExplode(){
-        level.explode(null,this.worldPosition.getX() + 0.5, this.worldPosition.getY() + 0.5, this.worldPosition.getZ() + 0.5, 50.0F, Level.ExplosionInteraction.BLOCK);
+        level.explode(null,this.worldPosition.getX() + 0.5, this.worldPosition.getY() + 0.5, this.worldPosition.getZ() + 0.5, 10, Level.ExplosionInteraction.BLOCK);
         level.removeBlock(worldPosition, false);
    }
 }

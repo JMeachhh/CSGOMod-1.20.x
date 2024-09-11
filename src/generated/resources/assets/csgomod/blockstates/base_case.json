@@ -1,7 +1,30 @@
 {
   "variants": {
-    "": {
+    "facing=down": {
+      "model": "csgomod:block/base_case",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "csgomod:block/base_case",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "csgomod:block/base_case",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "csgomod:block/base_case",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
       "model": "csgomod:block/base_case"
+    },
+    "facing=west": {
+      "model": "csgomod:block/base_case",
+      "x": 90,
+      "y": 270
     }
   }
 }
