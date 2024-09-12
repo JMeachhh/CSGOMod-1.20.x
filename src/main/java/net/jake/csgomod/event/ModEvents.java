@@ -91,45 +91,45 @@ public class ModEvents {
             // level 1
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(ModItems.POUND_COIN.get(), 2),
-                    new ItemStack(ModItems.CHROMA_TWO_CASE_KEY.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.CHROMA_TWO_CASE_KEY.get(), 1), 2, 4, 0.02f));
 
             // level 2
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 2),
-                    new ItemStack(ModItems.VALENCE.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.VALENCE.get(), 1),
+                    new ItemStack(ModItems.POUND_COIN.get(), 2), 2, 12, 0.02f));
 
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.TEN_P_COIN.get(), 1),
-                    new ItemStack(ModItems.ORIGAMI.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.ORIGAMI.get(), 1),
+                    new ItemStack(ModItems.TEN_P_COIN.get(), 1), 2, 12, 0.02f));
 
 
             // level 3
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 4),
-                    new ItemStack(ModItems.MONKEY_BUSINESS.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.MONKEY_BUSINESS.get(), 1),
+                    new ItemStack(ModItems.POUND_COIN.get(), 4), 2, 16, 0.02f));
 
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.TWENTY_P_COIN.get(), 8),
-                    new ItemStack(ModItems.WORM_GOD.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.WORM_GOD.get(), 1),
+                    new ItemStack(ModItems.TWENTY_P_COIN.get(), 8), 2, 16, 0.02f));
 
 
             // level 4
             trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 1),
-                    new ItemStack(ModItems.HYPER_BEAST.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.HYPER_BEAST.get(), 1),
+                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 1), 2, 20, 0.02f));
 
             trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 7),
-                    new ItemStack(ModItems.NEON_RIDER.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.NEON_RIDER.get(), 1),
+                    new ItemStack(ModItems.POUND_COIN.get(), 7), 2, 20, 0.02f));
 
             // level 5
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 11),
-                    new ItemStack(ModItems.MARBLE_FADE.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.MARBLE_FADE.get(), 1),
+                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 11), 2, 24, 0.02f));
 
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 7),
-                    new ItemStack(ModItems.ULTRAVIOLET.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.ULTRAVIOLET.get(), 1),
+                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 7), 2, 24, 0.02f));
 
         }
 
@@ -153,41 +153,41 @@ public class ModEvents {
 
             // level 2
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.TEN_P_COIN.get(), 1),
-                    new ItemStack(ModItems.OXIDE_BLAZE.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.OXIDE_BLAZE.get(), 1),
+                    new ItemStack(ModItems.TEN_P_COIN.get(), 1), 2, 8, 0.02f));
 
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.TWENTY_P_COIN.get(), 1),
-                    new ItemStack(ModItems.OXIDE_BLAZE.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.OXIDE_BLAZE.get(), 1),
+                    new ItemStack(ModItems.TWENTY_P_COIN.get(), 1), 2, 8, 0.02f));
 
 
             // level 3
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 5),
-                    new ItemStack(ModItems.MECHA_INDUSTRIES.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.MECHA_INDUSTRIES.get(), 1),
+                    new ItemStack(ModItems.POUND_COIN.get(), 5), 2, 8, 0.02f));
 
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 1),
-                    new ItemStack(ModItems.FLASHBACK.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.FLASHBACK.get(), 1),
+                    new ItemStack(ModItems.POUND_COIN.get(), 1), 2, 8, 0.02f));
 
 
             // level 4
             trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 2),
-                    new ItemStack(ModItems.ASIIMOV.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.ASIIMOV.get(), 1),
+                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 2), 2, 8, 0.02f));
 
             trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 2),
-                    new ItemStack(ModItems.NEO_NOIR.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.NEO_NOIR.get(), 1),
+                    new ItemStack(ModItems.POUND_COIN.get(), 2), 2, 8, 0.02f));
 
             // level 5
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.TWENTY_POUND_NOTE.get(), 10),
-                    new ItemStack(ModItems.SCORCHED.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.SCORCHED.get(), 1),
+                    new ItemStack(ModItems.TWENTY_POUND_NOTE.get(), 10), 2, 8, 0.02f));
 
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 20),
-                    new ItemStack(ModItems.CRISMON_WEB.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.CRISMON_WEB.get(), 1),
+                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 20), 2, 8, 0.02f));
 
 
         }
@@ -202,39 +202,39 @@ public class ModEvents {
 
             // level 2
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.TWENTY_P_COIN.get(), 1),
-                    new ItemStack(ModItems.SPIRIT_BOARD.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.SPIRIT_BOARD.get(), 1),
+                    new ItemStack(ModItems.TWENTY_P_COIN.get(), 1), 2, 8, 0.02f));
 
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.TEN_P_COIN.get(), 1),
-                    new ItemStack(ModItems.LIFTED_SPIRITS.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.LIFTED_SPIRITS.get(), 1),
+                    new ItemStack(ModItems.TEN_P_COIN.get(), 1), 2, 8, 0.02f));
 
             // level 3
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.TWENTY_P_COIN.get(), 3),
-                    new ItemStack(ModItems.NIGHT_TERROR.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.NIGHT_TERROR.get(), 1),
+                    new ItemStack(ModItems.TWENTY_P_COIN.get(), 3), 2, 8, 0.02f));
 
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 3),
-                    new ItemStack(ModItems.RAPID_EYE_MOVEMENT.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.RAPID_EYE_MOVEMENT.get(), 1),
+                    new ItemStack(ModItems.POUND_COIN.get(), 3), 2, 8, 0.02f));
 
             // level 4
             trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.FIVE_POUND_NOTE.get(), 5),
-                    new ItemStack(ModItems.NIGHTWISH.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.NIGHTWISH.get(), 1),
+                    new ItemStack(ModItems.FIVE_POUND_NOTE.get(), 5), 2, 8, 0.02f));
 
             trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 6),
-                    new ItemStack(ModItems.STARLIGHT_PROTECTOR.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.STARLIGHT_PROTECTOR.get(), 1),
+                    new ItemStack(ModItems.POUND_COIN.get(), 6), 2, 8, 0.02f));
 
             // level 5
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.TWENTY_POUND_NOTE.get(), 6),
-                    new ItemStack(ModItems.BLACK_LAMINATE.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.BLACK_LAMINATE.get(), 1),
+                    new ItemStack(ModItems.TWENTY_POUND_NOTE.get(), 6), 2, 8, 0.02f));
 
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 40),
-                    new ItemStack(ModItems.LORE.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.LORE.get(), 1),
+                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 40), 2, 8, 0.02f));
 
         }
 
@@ -250,42 +250,42 @@ public class ModEvents {
             // level 2
 
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 1),
-                    new ItemStack(ModItems.DIRECTIVE.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.DIRECTIVE.get(), 1),
+                    new ItemStack(ModItems.POUND_COIN.get(), 1), 2, 8, 0.02f));
 
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.TEN_P_COIN.get(), 4),
-                    new ItemStack(ModItems.WEASEL.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.WEASEL.get(), 1),
+                    new ItemStack(ModItems.TEN_P_COIN.get(), 4), 2, 8, 0.02f));
 
             // level 3
 
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 7),
-                    new ItemStack(ModItems.FUEL_INJECTOR.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.FUEL_INJECTOR.get(), 1),
+                    new ItemStack(ModItems.POUND_COIN.get(), 7), 2, 8, 0.02f));
 
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.POUND_COIN.get(), 6),
-                    new ItemStack(ModItems.AIRLOCK.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.AIRLOCK.get(), 1),
+                    new ItemStack(ModItems.POUND_COIN.get(), 6), 2, 8, 0.02f));
 
             // level 4
             trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.TWENTY_POUND_NOTE.get(), 2),
-                    new ItemStack(ModItems.NEON_REVOLUTION.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.NEON_REVOLUTION.get(), 1),
+                    new ItemStack(ModItems.TWENTY_POUND_NOTE.get(), 2), 2, 8, 0.02f));
 
             // level 4
             trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.FIVE_POUND_NOTE.get(), 1),
-                    new ItemStack(ModItems.ROLL_CAGE.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.ROLL_CAGE.get(), 1),
+                    new ItemStack(ModItems.FIVE_POUND_NOTE.get(), 1), 2, 8, 0.02f));
 
 
             // level 5
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 17),
-                    new ItemStack(ModItems.GAMMA_DOPPPLER.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.GAMMA_DOPPPLER.get(), 1),
+                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 17), 2, 8, 0.02f));
 
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 24),
-                    new ItemStack(ModItems.AUTOTRONIC.get(), 1), 2, 8, 0.02f));
+                    new ItemStack(ModItems.AUTOTRONIC.get(), 1),
+                    new ItemStack(ModItems.FIFTY_POUND_NOTE.get(), 24), 2, 8, 0.02f));
         }
 
 
@@ -405,19 +405,20 @@ public class ModEvents {
         List<VillagerTrades.ItemListing> genericTrades = event.getGenericTrades();
         List<VillagerTrades.ItemListing> rareTrades = event.getRareTrades();
 
-        rareTrades.add((pTrader, pRandom) -> new MerchantOffer(
-                new ItemStack(ModItems.FIVE_POUND_NOTE.get(), 1),
-                new ItemStack(ModBlocks.ARMS_DEAL_CASE.get(), 1),
-                3, 8, 0.02f));
 
         rareTrades.add((pTrader, pRandom) -> new MerchantOffer(
-                new ItemStack(ModItems.FIVE_POUND_NOTE.get(), 1),
+                new ItemStack(ModItems.FIVE_POUND_NOTE.get(), 5),
                 new ItemStack(ModBlocks.OPERATION_BRAVO.get(), 1),
                 3, 8, 0.02f));
 
         genericTrades.add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(ModItems.POUND_COIN.get(), 2),
                 new ItemStack(ModItems.CSGO_CASE_KEY.get(), 1),
+                3, 8, 0.02f));
+
+        genericTrades.add((pTrader, pRandom) -> new MerchantOffer(
+                new ItemStack(ModItems.POUND_COIN.get(), 1),
+                new ItemStack(ModItems.GAMMA_TWO_CASE_KEY.get(), 1),
                 3, 8, 0.02f));
     }
 }
