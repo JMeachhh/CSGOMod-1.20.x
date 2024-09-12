@@ -18,7 +18,7 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BASE_CASE.get()))
                     .title(Component.translatable("creativetab.cases_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.ARMS_DEAL_CASE.get());
+//                        output.accept(ModBlocks.ARMS_DEAL_CASE.get());
                         output.accept(ModBlocks.CHROMA_TWO_CASE.get());
 //                        output.accept(ModBlocks.CLUTCH_CASE.get());
                         output.accept(ModBlocks.DANGER_ZONE_CASE.get());

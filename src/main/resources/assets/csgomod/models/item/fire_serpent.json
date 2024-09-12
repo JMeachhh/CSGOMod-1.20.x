@@ -476,13 +476,11 @@
 		},
 		"firstperson_righthand": {
 			"rotation": [-90, 90, 0],
-			"translation": [0.5, 0.75, 0.75],
-			"scale": [0.6, 0.6, 0.6]
+			"translation": [0.5, 0.75, 0.75]
 		},
 		"firstperson_lefthand": {
 			"rotation": [-90, -90, 0],
-			"translation": [0.25, 1.25, 0.75],
-			"scale": [0.6, 0.6, 0.6]
+			"translation": [0.25, 1.25, 0.75]
 		},
 		"ground": {
 			"rotation": [-90, 0, 0],
