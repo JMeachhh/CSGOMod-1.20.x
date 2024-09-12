@@ -67,8 +67,6 @@ public class BaseCaseBlock extends BaseEntityBlock {
 
         return createTickerHelper(pBlockEntityType, ModBlockEntities.BASE_CASE_BE.get(),
                 (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
-
-//        return super.getTicker(pLevel, pState, pBlockEntityType);
     }
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {

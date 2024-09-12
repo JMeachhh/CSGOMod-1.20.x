@@ -130,6 +130,10 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
         return drops;
     }
 
+    public ItemStack getSlot(){
+        return itemHandler.getStackInSlot(0);
+    }
+
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int pContainerId, Inventory pPlayerInventory, Player pPlayer) {
@@ -177,6 +181,4 @@ public class BaseCaseBlockEntity extends BlockEntity implements MenuProvider {
     public boolean dropTaken() {
         return this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty();
     }
-
-
 }

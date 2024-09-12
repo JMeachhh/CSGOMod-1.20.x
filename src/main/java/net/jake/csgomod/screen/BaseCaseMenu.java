@@ -17,6 +17,8 @@ public class BaseCaseMenu extends AbstractContainerMenu {
     public final Level level;
     private final ContainerData data;
 
+    private Slot outputSlot;
+
     public BaseCaseMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
         this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
     }
@@ -34,7 +36,7 @@ public class BaseCaseMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler,0,79,32));
+            outputSlot = this.addSlot(new SlotItemHandler(iItemHandler,0,79,32));
         });
 
         addDataSlots(data);
@@ -64,4 +66,16 @@ public class BaseCaseMenu extends AbstractContainerMenu {
             this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
         }
     }
+
+//    @Override
+//    public void removed(Player pPlayer) {
+//        super.removed(pPlayer);
+//
+//        if (!level.isClientSide && blockEntity != null) {
+//            // Remove the block from the world when the menu is closed
+//            if(!outputSlot.hasItem()){
+//                level.removeBlock(blockEntity.getBlockPos(), false);
+//            }
+//        }
+//    }
 }
