@@ -251,6 +251,11 @@
 		},
 		"fixed": {
 			"rotation": [0, 0, -66]
+		},
+		"villager": {
+			"rotation": [45, 90, 0],
+			"translation": [0, 0, 0.25],
+			"scale": [0.6, 0.6, 0.6]
 		}
 	}
 }
