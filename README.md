@@ -91,12 +91,11 @@ A Counter-Strike Mod for Minecraft which brings the thrill of opening cases to m
 - Bomb
 - Defuse Kit
 - Gun Holding Animation
-# Upcoming Features
+# Potential Upcoming Features
 ## Sounds
 Adding case sounds  
 Adding bomb sounds  
 Adding defusing sounds
-# Potential Upcoming Features
 ## Gun Shooting 
 Adding ability to use guns
 # Whats Needed
